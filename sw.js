@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-83b4dd5287f6576775f5.js"
+    "url": "webpack-runtime-ccbc80f2d20aefc3bd94.js"
   },
   {
     "url": "framework-f600a0dcdbbe2ab3be17.js"
@@ -45,11 +45,11 @@ self.__precacheManifest = [
     "url": "6746aed0-17082d38049ad2045e8c.js"
   },
   {
-    "url": "app-f9512459f29327893906.js"
+    "url": "app-b35292923d64fb424ecd.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e4f25b0126e164e6161a36080a1a530b"
+    "revision": "2e24cd23f282fd8bb79c96537fcbe28c"
   },
   {
     "url": "fetch.umd.js"
@@ -69,11 +69,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "cedac0d95ac9976213d9dd2479b11f3c"
+    "revision": "edbf724b3963861a2d838c6d752b5f36"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "4404cddaae2e46537a8c135deea4ba64"
+    "revision": "2c795a6c6749116d5133802bb3f0b4b9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -161,12 +161,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/pets`), ``)
+  pathname = pathname.replace(new RegExp(`^/pets-adoption-guide`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/pets/app-f9512459f29327893906.js`))) {
+  if (!resources || !(await caches.match(`/pets-adoption-guide/app-b35292923d64fb424ecd.js`))) {
     return await fetch(event.request)
   }
 
@@ -179,7 +179,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/pets/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/pets-adoption-guide/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
