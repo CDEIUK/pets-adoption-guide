@@ -1,8 +1,9 @@
 import React from "react"
 import { useTable, useFilters } from "react-table"
 
-export default function RepositoryTable() {
-  const data = require("../data/repository.json")
+export default function AdoptionGuideRepositoryTable(props) {
+  const dataLoad = require("../data/repository.json")
+  const data = dataLoad.filter(a => a[props.pet] == "x")
 
   const columns = React.useMemo(
     () => [
@@ -10,53 +11,15 @@ export default function RepositoryTable() {
         Header: "Who",
         accessor: "who",
         disableFilters: true,
-        minWidth: 200,
-      },
-      {
-        Header: "Sector",
-        accessor: "sector",
-        Filter: SelectColumnFilter,
-        filter: "includes",
-        minWidth: 200,
-      },
-      {
-        Header: "Location",
-        accessor: "country",
-        Filter: SelectColumnFilter,
-        filter: "includes",
-        minWidth: 200,
+        minWidth: 150,
       },
       {
         Header: "Description",
         accessor: "description",
         disableFilters: true,
-        minWidth: 550,
+        minWidth: 100,
         textAlign: "justify",
         fontSize: "12px",
-      },
-      {
-        Header: "Stage of development",
-        accessor: "stage-of-dev",
-        Filter: SelectColumnFilter,
-        filter: "includes",
-        minWidth: 200,
-      },
-      {
-        Header: "PETs used",
-        accessor: "pets1",
-        Cell: ({ row }) => (
-          <div>
-            <p>{row.original.pets1}</p>
-            <p>{row.original.pets2}</p>
-            <p>{row.original.pets3}</p>
-          </div>
-        ),
-        Filter: SelectPetsFilter,
-        id: "pets1",
-        id2: "pets2",
-        id3: "pets3",
-        filter: petsCustomFilterFn,
-        minWidth: 250,
       },
       {
         Header: "Supporting links",
@@ -74,7 +37,7 @@ export default function RepositoryTable() {
           </div>
         ),
         disableFilters: true,
-        minWidth: 300,
+        minWidth: 200,
       },
     ],
     []
@@ -109,55 +72,6 @@ export default function RepositoryTable() {
         ))}
       </select>
     )
-  }
-
-  function SelectPetsFilter({
-    column: { filterValue, setFilter, preFilteredRows, id, id2, id3 },
-  }) {
-    // Calculate the options for filtering
-    // using the preFilteredRows
-    const options = React.useMemo(() => {
-      const options = new Set()
-      preFilteredRows.forEach(row => {
-        if (row.original[id] !== "") {
-          options.add(row.original[id])
-        }
-        if (row.original[id2]) {
-          options.add(row.original[id2])
-        }
-        if (row.original[id3]) {
-          options.add(row.original[id3])
-        }
-      })
-      return [...options.values()]
-    }, [id, id2, id3, preFilteredRows])
-
-    // Render a multi-select box
-    return (
-      <select
-        value={filterValue}
-        onChange={e => {
-          setFilter(e.target.value || undefined)
-        }}
-      >
-        <option value="">All</option>
-        {options.map((option, i) => (
-          <option key={i} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
-    )
-  }
-
-  function petsCustomFilterFn(rows, id, filterValue) {
-    return rows.filter(row => {
-      return (
-        row.original["pets1"] === filterValue ||
-        row.original["pets2"] === filterValue ||
-        row.original["pets3"] === filterValue
-      )
-    })
   }
 
   const defaultColumn = React.useMemo(

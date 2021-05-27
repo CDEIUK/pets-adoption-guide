@@ -1,18 +1,26 @@
 ---
-title: Glossary
+title: What are PETs?
 ---
 
-import Collapse from "../components/collapse"
 import CookieBanner from "../components/cookies"
 import OutboundLink from "../components/outbound-link"
+import Collapse from "../components/collapse"
 
 <CookieBanner />
 
-## Homomorphic Encryption
+A privacy enhancing technology is any technical method that protects the privacy or confidentiality of sensitive information. This broad definition covers a range of technologies, from relatively simple ad-blocking browser extensions to the Tor network for anonymous communication. We are interested in a narrower set of technologies, that we divide into two categories: _traditional_ and _emerging_ PETs.
+
+Traditional PETs are well-established privacy techniques, such as encryption schemes that secure information in transit and at rest, and de-identification techniques such as tokenization and k-anonymity.
+
+Emerging PETs are a group of technologies that have begun to provide novel solutions to privacy challenges in modern data-driven systems. Which PETs fall into this category is a somewhat arbitrary choice, but we consider homomorphic encryption, trusted execution environments, secure multi-party computation, differential privacy, and systems for federated data processing.
+
+## Descriptions of PETs
+
+<Collapse label="Homomorphic encryption">
+
+### Homomorphic encryption
 
 Homomorphic encryption enables computation directly on encrypted data. Whereas traditional encryption schemes facilitate the encryption of data _in transit_ and _at rest_, homomorphic encryption schemes additionally facilitate encryption _in process_.
-
-<Collapse label="Details">
 
 Homomorphic encryption can enable data processing to be outsourced to an untrusted third party. A data controller homomorphically encrypts their data, sends it to a third party data processor, the processor computes directly on the encrypted data producing an encrypted result, and the result is sent to the controller, who decrypts it. In this way, processing of sensitive data can be outsourced to third parties without having to establish trust, since the data remains encrypted throughout.
 
@@ -22,11 +30,9 @@ Similarly, homomorphic encryption may provide assurance to an organisation condu
 
 </Collapse>
 
-## Trusted Execution Environments
+<Collapse label="Trusted Execution Environments">
 
-A trusted execution environment (TEE) is a processing environment isolated from a computer’s main processor and memory. Code or data held within this environment cannot be accessed from the main processor, and communications between the main processorand the TEE are encrypted.
-
-<Collapse label="Details">
+A trusted execution environment (TEE) is a processing environment isolated from a computer’s main processor and memory. Code or data held within this environment cannot be accessed from the main processor, and communications between the main processor and the TEE are encrypted.
 
 The use cases for TEEs are similar to homomorphic encryption. A data controller can store their data within a TEE, to be operated on by an untrusted third party’s code also held within the TEE. Processing within the TEE occurs directly on unencrypted data - this means processing is likely to be faster than with homomorphic encryption, due to computational overhead incurred by the latter.. Once calculated, the result is encrypted before being communicated back to the data controller, who has access to the appropriate decryption key.
 
@@ -34,11 +40,9 @@ The use cases for TEEs are similar to homomorphic encryption. A data controller 
 
 </Collapse>
 
-## Multi-party Computation
+<Collapse label="Multi-party computation">
 
-A multi-party computation (MPC) protocol enables a function taking input from multiple parties to be jointly computed, whilst each participating party keeps their input secret from the others. This typically involves fragmenting data over multiple networked nodes, such that each node hosts an “unintelligible shard” of data; inspection of a single shard does not reveal information about the original data. Each node computes a function on its shard, and the outcomes are aggregated into a final result. MPC protocols leverage cryptographic primitives to ensure the security and confidentiality of the data.
-
-<Collapse label="Details">
+A multi-party computation (MPC) protocol enables a function taking input from multiple parties to be jointly computed, whilst each participating party keeps their input secret from the others. This typically involves fragmenting data over multiple networked nodes, such that each node hosts an “unintelligible shard” of data; inspection of a single shard does not reveal information about the original data. Each node computes a function on its shard, and the outcomes are aggregated into a final result.
 
 To gain an intuitive understanding of MPC, consider a group of employees who want to determine their average salary, without revealing their individual salaries to one another. The below figure illustrates how MPC can be implemented using additive secret sharing, relying on basic mathematical properties of addition to split the computation between the parties such that salaries remain confidential. A correct result is obtained by recombining the results of each party’s computations. In practice, MPC protocols are more complex than this naive example, so as to be secure and support a wide range of operations.
 
@@ -46,11 +50,9 @@ To gain an intuitive understanding of MPC, consider a group of employees who wan
 
 </Collapse>
 
-## Federated Analytics
+<Collapse label="Federated Analytics">
 
 Federated analytics is a paradigm for executing a computer program against decentralised data. This involves a party uploading the program to the server or device on which the data is situated, executing it on the server or device with the data in situ, and communicating the results back to the originating party. In this way, no data is directly revealed to the party.
-
-<Collapse label="Details">
 
 A subset of federated analytics is _federated learning_, which involves training a machine learning model on distributed datasets. The idea is to train local models directly on users' devices using local data, and then for the devices to share the weights of the resulting model with one another, in order for a new global model to be determined.
 
@@ -62,11 +64,9 @@ An attacker could infer user information from these weights, and mechanisms (suc
 
 </Collapse>
 
-## Differential Privacy
+<Collapse label="Differential Privacy">
 
 Differential privacy is a formal definition of privacy requiring that the output of any statistical analysis reveals no information specific to an individual in the dataset. An algorithm isi typically made differentially private by adding noise to either the input data (local differential privacy) or to the output it produces (global differential privacy).
-
-<Collapse label="Details">
 
 Differential privacy was developed in response to a 2003 paper by Irit Nisur and Kobbi Nissim which established the fundamental law of information recovery: overly accurate answers to too many queries of a statistical model enables dataset recovery. It follows that in order for the data used to build a model to be private, it the model must necessarily be inaccurate to some extent. The amount of noise must be chosen carefully: too little and the dataset will not be private, too much and the output will be so inaccurate as to be useless. This is the _**privacy-utility trade-off**_.
 
@@ -76,11 +76,9 @@ The privacy-utility trade-off is formalised through the concept of Ɛ-differenti
 
 </Collapse>
 
-## De-identification Techniques
+<Collapse label="De-identification Techniques">
 
 We define a de-identification technique as any data transformation or modification that reduces the amount of information about an individual or entity in a dataset, and/or reduces the risk that an individual or entity can be re-identified. These methods are distinguished from the PETs described above in that they involve direct manipulation of the raw data, rather than being mechanisms for protecting confidentiality whilst maintaining maximum utility over the underlying data.
-
-<Collapse label="Details">
 
 Some examples of de-identification techniques are:
 

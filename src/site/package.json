@@ -46,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CDEIUK/pets"
+    "url": "https://github.com/CDEIUK/pets-adoption-guide"
   },
   "bugs": {
-    "url": "https://github.com/CDEIUK/pets/issues"
+    "url": "https://github.com/CDEIUK/pets-adoption-guide/issues"
   }
 }

@@ -5,7 +5,7 @@ module.exports = {
     defaultTitle: `PETs`,
     siteTitleShort: `PETs`,
     siteDescription: `PETs`,
-    siteUrl: `https://dbckz.github.io/pets`,
+    siteUrl: `https://cdeiuk.github.io/pets-adoption-guide`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://dbckz.github.io/pets/`,
+        siteUrl: `https://cdeiuk.github.io/pets-adoption-guide/`,
       },
     },
     `gatsby-plugin-offline`,

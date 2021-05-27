@@ -1,13 +1,25 @@
 # Sidebar navigation
 - label: Home
   link: /
-- label: Repository of Use Cases
-  link: /repository
-- label: Glossary
-  link: /glossary
-- label: Future work
-  link: /future-work
-- label: Privacy policy
+- label: Background
+  items:
+    - label: What are PETs?
+      link: /what-are-pets
+    - label: Opportunities
+      link: /opportunities
+- label: Adopting PETs
+  items:
+    - label: PETs Adoption Guide
+      link: /adoption-guide
+    - label: Repository of Use Cases
+      link: /repository
+- label: Further information
+  items:
+    - label: Additional Resources
+      link: /additional-resources
+    - label: Future Work
+      link: /future-work
+- label: Privacy
   items:
     - label: Cookie Policy
       link: /cookie-policy
