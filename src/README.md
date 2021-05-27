@@ -1,8 +1,8 @@
-# PETs use case repository and adoption guide source
+# PETs adoption guide source
 
-This folder contains all of the source for the repository including:
+This folder contains all of the source for the adoption guide including:
 
-- `site/`: Contains the source code for the website. See `site/README.md` for more details.
+- `site/`: Contains the source code for the website.
 
 ## Development
 

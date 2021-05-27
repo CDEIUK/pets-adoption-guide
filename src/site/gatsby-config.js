@@ -1,10 +1,10 @@
 module.exports = {
-  pathPrefix: `/pets`,
+  pathPrefix: `/pets-adoption-guide`,
   siteMetadata: {
-    siteTitle: `PETs`,
-    defaultTitle: `PETs`,
-    siteTitleShort: `PETs`,
-    siteDescription: `PETs`,
+    siteTitle: `PETs Adoption Guide`,
+    defaultTitle: `PETs Adoptiong Guide`,
+    siteTitleShort: `PETs Adoption Guide`,
+    siteDescription: `PETs Adoption Guide`,
     siteUrl: `https://cdeiuk.github.io/pets-adoption-guide`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `PETs`,
-        short_name: `PETs`,
+        name: `PETs Adoption Guide`,
+        short_name: `PETs Adoption Guide`,
         start_url: `/`,
         background_color: `#f0ede3`,
         display: `standalone`,
