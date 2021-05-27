@@ -1,0 +1,63 @@
+---
+title: Homomorphic Encryption
+---
+
+import CookieBanner from "../../components/cookies"
+import Collapse from "../../components/collapse"
+import OutboundLink from "../../components/outbound-link"
+import AdoptionGuideRepositoryTable from "../../components/adoption-guide-repository-table"
+
+Based on your responses to the questions in the adoption guide, you may want to consider homomorphic encryption to protect sensitive data in your project.
+
+## What is homomorphic encryption?
+
+Homomorphic encryption enables computation directly on encrypted data. Whereas traditional encryption schemes facilitate the encryption of data _in transit_ and _at rest_, homomorphic encryption schemes additionally facilitate encryption _in process_.
+
+Homomorphic encryption can enable data processing to be outsourced to an untrusted third party. A data controller homomorphically encrypts their data, sends it to a third party data processor, the processor computes directly on the encrypted data producing an encrypted result, and the result is sent to the controller, who decrypts it. In this way, processing of sensitive data can be outsourced to third parties without having to establish trust, since the data remains encrypted throughout.
+
+Similarly, homomorphic encryption may provide assurance to an organisation conducting their own data processing within a computing environment they do not fully trust, such as when using cloud infrastructure.
+
+![Homomorphic encryption](../images/he.png)
+
+Homomorphic encryption schemes are separated into three categories, depending on the different types of operations that the scheme permits:
+
+- **_Partial homomorphic encryption:_** permits only a single type of operation (e.g. addition) on encrypted data.
+- **_Somewhat homomorphic encryption:_** permits some combinations of operations (e.g. some additions and multiplications) on encrypted data.
+- **_Fully homomorphic encryption:_** premits arbitrary operations on encryption data.
+
+## Why homomorphic encryption?
+
+Your answers to the adoption guide indicate that:
+
+- You hold data that you want to share with a third party
+- You want to share the raw, row-level data
+- Sensitive information needs to be included in the data
+- You are sharing the data so as to outsource data processing to the third party
+- Latency is not critical
+
+Homomorphic encryption is therefore potentially a suitable solution, as it allows processing to be outsourced to a third party whilst the data remains encrypted throughout, meaning the third party cannot access the sensitive information in the dataset. Computing on encrypted data is more computationally intensive than computing on unencrypted data, which increases latency. If latency is a more critical requirement, [trusted execution environments](/adoption-guide/trusted-execution-environments) may provide a suitable alternative solution.
+
+## Limitations to consider
+
+- FHE allows arbitrary operations, but existing schemes are generally impractical as they incur a significant computational overhead. However, this is an active area of research where improvements are likely to occur in the future.
+- Whilst PHE and SHE schemes are more performant, they support only a limited number of operations, and the nature of the operations that will be required by a system must be known in advance so that an appropriate specific encryption scheme can be selected.
+- When outsourcing to a third party data processor, you should be mindful of the fact that because the third party cannot read any of the data, it may be more complicated to identify sources of error or develop new code against the data. You must therefore agree and adhere to a schema for the data in advance. Additionally, you may wish to share a plaintext dummy dataset that matches the schema of the real dataset, which the third party can use to develop and test their code against.
+
+<Collapse label="Technical resources">
+
+| Resource                                                                                                       | Description                                                                                                                                                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <OutboundLink href="https://homomorphicencryption.org/standard">Homomorphic encryption standard</OutboundLink> | A proposed community security and API standard for homomorphic encryption                                                                                                                                                                                |
+| <OutboundLink href="https://github.com/Microsoft/SEAL">Microsoft SEAL</OutboundLink>                           | An open-source homomorphic encryption library created by Microsoft, written in C++. The <OutboundLink href="https://github.com/Microsoft/EVA">EVA project</OutboundLink> separately provides a Python API for homomorphically encrypting data with SEAL. |
+| <OutboundLink href="https://github.com/OpenMined/TenSEAL">OpenMined TenSEAL</OutboundLink>                     | A library for performing homomorphic encryption operations on tensors, enabling homomorphic encryption to be more easily integrated into ML applications                                                                                                 |
+| <OutboundLink href="https://fhe-website.mybluemix.net">IBM FHE Toolkits</OutboundLink>                         | iOS, MacOS, Linux, and Android Toolkits for integreating homomorphic encryption in desktop and mobile applications                                                                                                                                       |
+
+</Collapse>
+
+<Collapse label="Use Cases">
+  See the full <a href="/repository">use case repository</a> for additional
+  fields.
+  <AdoptionGuideRepositoryTable pet="he" />
+</Collapse>
+
+Click [here](/adoption-guide) to return to the Adoption Guide.

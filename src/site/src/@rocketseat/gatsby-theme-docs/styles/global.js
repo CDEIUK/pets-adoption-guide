@@ -126,6 +126,7 @@ export default function GlobalStyle() {
           border-spacing: 0;
           width: 100%;
           margin-bottom: 16px;
+          margin-top: 16px;
           color: #444;
         }
 

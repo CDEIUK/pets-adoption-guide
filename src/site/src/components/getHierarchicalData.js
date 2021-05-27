@@ -73,9 +73,9 @@ function getHierarchicalData() {
                                             description:
                                               "You should consider trusted execution environments. Click for further information.",
                                             link:
-                                              "/pets-adoption-guide/trusted-execution-environments", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                                              "/pets-adoption-guide/adoption-guide/trusted-execution-environments", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
                                             // link:
-                                            //   "/trusted-execution-environments",
+                                            //   "/adoption-guide/trusted-execution-environments",
                                             children: [],
                                           },
                                         ],
@@ -93,8 +93,8 @@ function getHierarchicalData() {
                                             description:
                                               "You should consider homomorphic encryption. Click for further information.",
                                             link:
-                                              "/pets-adoption-guide/homomorphic-encryption", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                            // link: "/homomorphic-encryption",
+                                              "/pets-adoption-guide/adoption-guide/homomorphic-encryption", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                                            // link: "/adoption-guide/homomorphic-encryption",
                                             children: [],
                                           },
                                         ],
@@ -116,8 +116,8 @@ function getHierarchicalData() {
                                     description:
                                       "You should consider establishing a data sharing agreement. Click for further information.",
                                     link:
-                                      "/pets-adoption-guide/data-sharing-agreement", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                    // link: "/data-sharing-agreement",
+                                      "/pets-adoption-guide/adoption-guide/data-sharing-agreement", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                                    // link: "/adoption-guide/data-sharing-agreement",
                                     children: [],
                                   },
                                 ],
@@ -139,8 +139,9 @@ function getHierarchicalData() {
                             type: "Organism",
                             description:
                               "You should consider using de-identification techniques. Click for further infrormation.",
-                            link: "/pets-adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/de-identification",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/de-identification",
                             children: [],
                           },
                         ],
@@ -174,8 +175,9 @@ function getHierarchicalData() {
                             type: "Organism",
                             description:
                               "You should consider differential privacy. Click for further information.",
-                            link: "/pets-adoption-guide/differential-privacy", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/differential-privacy",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/differential-privacy", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/differential-privacy",
                             children: [],
                           },
                         ],
@@ -192,8 +194,9 @@ function getHierarchicalData() {
                             type: "Organism",
                             description:
                               "You should consider establishing a data sharing agreement. Click for further information.",
-                            link: "/pets-adoption-guide/data-sharing-agreement", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/differential-privacy",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/data-sharing-agreement", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/differential-privacy",
                             children: [],
                           },
                         ],
@@ -245,8 +248,9 @@ function getHierarchicalData() {
                             type: "Organism",
                             description:
                               "You should consider federated learning. Click for further information.",
-                            link: "/pets-adoption-guide/federated-learning", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/federated-learning",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/federated-learning", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/federated-learning",
                             children: [],
                           },
                         ],
@@ -277,8 +281,8 @@ function getHierarchicalData() {
                                     description:
                                       "You should minimise the data you are sharing. Click for further information.",
                                     link:
-                                      "/pets-adoption-guide/data-minimisation", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                    // link: "/data-minimisation",
+                                      "/pets-adoption-guide/adoption-guide/data-minimisation", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                                    // link: "/adoption-guide/data-minimisation",
                                     children: [],
                                   },
                                 ],
@@ -296,8 +300,8 @@ function getHierarchicalData() {
                                     description:
                                       "You should consider using de-identification techniques. Click for further information.",
                                     link:
-                                      "/pets-adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                    // link: "/de-identification",
+                                      "/pets-adoption-guide/adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                                    // link: "/adoption-guide/de-identification",
                                     children: [],
                                   },
                                 ],
@@ -322,8 +326,9 @@ function getHierarchicalData() {
                     type: "Organism",
                     description:
                       "You should consider federated analytics. Click for further information.",
-                    link: "/pets-adoption-guide/federated-analytics", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                    // link: "/federated-analytics",
+                    link:
+                      "/pets-adoption-guide/adoption-guide/federated-analytics", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                    // link: "/adoption-guide/federated-analytics",
                     children: [],
                   },
                 ],
