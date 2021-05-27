@@ -1,10 +1,10 @@
-# PETs use case repository and adoption guide
+# PETs adoption guide
 
 ![Build and Deploy Site](https://github.com/CDEIUK/pets-adoption-guide/workflows/Build%20and%20Deploy%20Site/badge.svg)
 
-This repository contains the source code for CDEI's PETs use case repository and adoption guide.
+This repository contains the source code for CDEI's PETs adoption guide.
 
-You can view these on our [website][site].
+Here's the [website][site].
 
 ## Development
 
