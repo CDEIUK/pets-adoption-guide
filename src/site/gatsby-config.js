@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/pets-adoption-guide`,
   siteMetadata: {
     siteTitle: `PETs Adoption Guide`,
-    defaultTitle: `PETs Adoptiong Guide`,
+    defaultTitle: `PETs Adoption Guide`,
     siteTitleShort: `PETs Adoption Guide`,
     siteDescription: `PETs Adoption Guide`,
     siteUrl: `https://cdeiuk.github.io/pets-adoption-guide`,
