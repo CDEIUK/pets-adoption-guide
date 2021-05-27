@@ -12,10 +12,15 @@ import getHierarchicalData from "../components/getHierarchicalData"
 - The guide is primarily aimed at technical architects and product owners working on projects that involve the sharing or processing of sensitive information.
 - Answer the questions that appear in the decision tree by clicking on the box containing the appropriate answer. Do this until you reach an end node which can be clicked to display further information.
 - You can explore the whole decision tree structure by clicking to expand the various different nodes in the tree.
-- Click and drag to pan through the tree diagram, and use your mouse wheel or trackpad to zoom in and out
+- Click and drag within the black box to pan through the tree diagram, and use your mouse wheel or trackpad to zoom in and out.
 
 ## Key considerations
 
-**TODO: Here are some considerations that were taken into account when developing the adoption guide**
+Some of the key considerations that have guided the design of the tree are:
+
+- The location of the data that is being shared or processed
+- The sensitivity of the data
+- The granularity of data that needs to be used
+- The type of data analysis that is to be performed
 
 <Tree data={getHierarchicalData()} />
