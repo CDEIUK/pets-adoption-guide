@@ -2,7 +2,7 @@
   "name": "cdei-pets",
   "private": true,
   "version": "1.0.0",
-  "description": "PETs use case repository and adoption guide",
+  "description": "PETs Adoption Guide",
   "author": "CDEI",
   "starter-name": "gatsby-starter-rocket-docs",
   "dependencies": {
