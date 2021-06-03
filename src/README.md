@@ -1,6 +1,6 @@
-# PETs adoption guide source
+# PETs Adoption Guide source
 
-This folder contains all of the source for the adoption guide including:
+This folder contains all of the source for the Adoption Guide including:
 
 - `site/`: Contains the source code for the website.
 
