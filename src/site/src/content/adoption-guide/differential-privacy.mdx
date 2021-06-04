@@ -1,23 +1,48 @@
 ---
-title: Differential privacy and de-identification
+title: Differential privacy
 ---
 
 import CookieBanner from "../../components/cookies"
 import Collapse from "../../components/collapse"
+import OutboundLink from "../../components/outbound-link"
 import AdoptionGuideRepositoryTable from "../../components/adoption-guide-repository-table"
 
-Based on your responses, you may want to use a differentially private system to derive the insights you wish to share, or use de-identification techniques such as k-anonymity before sharing the data.
+Based on your responses, you may want to use a differentially private system to derive the insights you wish to share.
 
-## Why differential privacy and de-identification?
+## What is differential privacy?
 
-Relate back to the considerations of the guide...
+Differential privacy is a formal definition of privacy requiring that the output of any statistical analysis reveals no information specific to an individual in the dataset. An algorithm is typically made differentially private by adding noise to either the input data (local differential privacy) or to the output it produces (global differential privacy).
+
+Differential privacy was developed in response to a 2003 paper by Irit Nisur and Kobbi Nissim which established the fundamental law of information recovery: overly accurate answers to too many queries of a statistical model enables dataset recovery. It follows that in order for the data used to build a model to be private, it must necessarily be inaccurate to some extent. The amount of noise must be chosen carefully: too little and the dataset will not be private, too much and the output will be so inaccurate as to be useless. This is the _**privacy-utility trade-off**_.
+
+The privacy-utility trade-off is formalised through the concept of Ɛ-differential privacy. Querying a model leaks information about the dataset, and the amount of information leakage increases with the number of queries. The parameter Ɛ quantifies this leakage and is known as the privacy budget. A user is stopped from performing further queries if they exceed their budget. Equivalently, Ɛ can be thought of as the maximum permissible difference between the result of a query performed against a model, and the result of an identical query performed against a model where an individual has been omitted from the dataset.
+
+![Differential privacy](../images/dp.png)
+
+## Why differential privacy?
+
+Your answers to the questions in the Adoption Guide indicate that:
+
+- You hold data that you want to share with a third party
+- You don't want to share the raw data, but rather insights derived from the raw data
+- The data is such that generalisations can be made over a population
+
+Differential privacy is therefore potentially a suitable solution, as it allows insights derived from the raw data to be shared, whilst providing a mathemetical guarentee on the amount of information that can be inferred about any individual row in the dataset.
 
 ## Limitations to consider
 
-TODO
+- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
+- Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
 
 <Collapse label="Technical resources">
-  Link to software libraries, service providers etc.
+
+| Resource                                                                                                                                                                                     | Description                                                                                                                                                                                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <OutboundLink href="https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaboration-space/focus-areas/de-id/dp-blog">NIST's differential privacy blog series</OutboundLink> | A series of blogs from the US National Institute of Standards and Technology covering use cases and technical aspects of differential privacy.                                                                                                                                                                                       |
+| <OutboundLink href="https://github.com/google/differential-privacy">Google's differential privacy libraries</OutboundLink>                                                                   | Includes libraries that implement noise addition primitives and differentially private aggregations, and an end-to-end differential privacy framework built on Apache Beam. Libraries are written in Go, C++, and Java, and OpenMined provide a <OutboundLink href="https://github.com/OpenMined/PyDP>Python wrapper</OutboundLink>. |
+| <OutboundLink href="https://opacus.ai/">PyTorch Opacus</OutboundLink>                                                                                                                        | Library for training differentially private machine learning models using the PyTorch framework                                                                                                                                                                                                                                      |
+| <OutboundLink href="https://github.com/tensorflow/privacy">TensorFlow Privacy</OutboundLink>                                                                                                 | Library for training differentially private machine learning models using the TensorFlow framework                                                                                                                                                                                                                                   |
+
 </Collapse>
 
 <Collapse label="Use Cases">
