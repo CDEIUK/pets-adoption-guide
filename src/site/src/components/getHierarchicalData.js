@@ -221,26 +221,27 @@ function getHierarchicalData() {
             name: "Q2",
             type: "Family",
             description:
-              "Do you want to use their data to train a predictive model or perform more traditional data science/analysis?",
+              "Could data processing be performed on the devices/servers of the parties involved, or does processing need to be performed centrally?",
             children: [
               {
                 id: 21,
                 name: "A2-1",
                 type: "Organism",
-                description: "Train a predictive model",
+                description: "Processing on remote devices/servers",
                 children: [
                   {
                     id: 23,
                     name: "Q3",
                     type: "Organism",
                     description:
-                      "Could it be possible to run the training algorithm on the other parties'/users' servers/devices?",
+                      "Which of the following best describes your use case?",
                     children: [
                       {
                         id: 24,
                         name: "A3-1",
                         type: "Organism",
-                        description: "Yes",
+                        description:
+                          "You want to train a machine learning model on the data",
                         children: [
                           {
                             id: 26,
@@ -256,57 +257,42 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 25,
-                        name: "A3-2",
+                        id: 24,
+                        name: "A3-100",
                         type: "Organism",
-                        description: "No",
+                        description:
+                          "You want to perform tradional data science/statistical techniques on the data",
                         children: [
                           {
-                            id: 27,
-                            name: "Q4",
+                            id: 26,
+                            name: "RESULT",
                             type: "Organism",
                             description:
-                              "Do you need to use sensitive/personally identifiable information in the training dataset?",
-                            children: [
-                              {
-                                id: 28,
-                                name: "A4-1",
-                                type: "Organism",
-                                description: "Yes",
-                                children: [
-                                  {
-                                    id: 30,
-                                    name: "RESULT",
-                                    type: "Organism",
-                                    description:
-                                      "You should minimise the data you are sharing. Click for further information.",
-                                    link:
-                                      "/pets-adoption-guide/adoption-guide/data-minimisation", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                    // link: "/adoption-guide/data-minimisation",
-                                    children: [],
-                                  },
-                                ],
-                              },
-                              {
-                                id: 29,
-                                name: "A4-2",
-                                type: "Organism",
-                                description: "No",
-                                children: [
-                                  {
-                                    id: 31,
-                                    name: "RESULT",
-                                    type: "Organism",
-                                    description:
-                                      "You should consider using de-identification techniques. Click for further information.",
-                                    link:
-                                      "/pets-adoption-guide/adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                                    // link: "/adoption-guide/de-identification",
-                                    children: [],
-                                  },
-                                ],
-                              },
-                            ],
+                              "You should consider federated analytics. Click for further information.",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/federated-analytics", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/federated-analytics",
+                            children: [],
+                          },
+                        ],
+                      },
+                      {
+                        id: 24,
+                        name: "A3-1",
+                        type: "Organism",
+                        description:
+                          "You want to derive a specific result from the collective data of the parties",
+                        children: [
+                          {
+                            id: 26,
+                            name: "RESULT",
+                            type: "Organism",
+                            description:
+                              "You should consider multi-party computation. Click for further information.",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/multi-party-computation", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/multi-party-computation",
+                            children: [],
                           },
                         ],
                       },
@@ -318,18 +304,56 @@ function getHierarchicalData() {
                 id: 22,
                 name: "A2-2",
                 type: "Organism",
-                description: "Traditional data science/analysis",
+                description: "Processing centrally",
                 children: [
                   {
                     id: 32,
-                    name: "RESULT",
+                    name: "lksadn",
                     type: "Organism",
                     description:
-                      "You should consider federated analytics. Click for further information.",
-                    link:
-                      "/pets-adoption-guide/adoption-guide/federated-analytics", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                    // link: "/adoption-guide/federated-analytics",
-                    children: [],
+                      "Does sensitive / personally identifiable information need to be included in the dataset that is shared, or could it be useful without it?",
+                    children: [
+                      {
+                        id: 1022,
+                        name: "A2-2",
+                        type: "Organism",
+                        description:
+                          "Sensitive information needs to be included",
+                        children: [
+                          {
+                            id: 32,
+                            name: "RESULT",
+                            type: "Organism",
+                            description:
+                              "You should consider establishing a data sharing agreement. Click for further information.",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/data-sharing-agreement", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/data-sharing-agreement",
+                            children: [],
+                          },
+                        ],
+                      },
+                      {
+                        id: 1027,
+                        name: "A2-2",
+                        type: "Organism",
+                        description:
+                          "Data could be useful without sensitive information",
+                        children: [
+                          {
+                            id: 876,
+                            name: "RESULT",
+                            type: "Organism",
+                            description:
+                              "You should consider using de-identification techniques. Click for further information.",
+                            link:
+                              "/pets-adoption-guide/adoption-guide/de-identification", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/de-identification",
+                            children: [],
+                          },
+                        ],
+                      },
+                    ],
                   },
                 ],
               },
