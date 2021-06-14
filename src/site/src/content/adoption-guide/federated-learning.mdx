@@ -5,26 +5,45 @@ title: Federated Learning
 import CookieBanner from "../../components/cookies"
 import Collapse from "../../components/collapse"
 import AdoptionGuideRepositoryTable from "../../components/adoption-guide-repository-table"
+import OutboundLink from "../../components/outbound-link"
 
-Based on your responses, you may want to use federating learning.
+Based on your responses, you may want to consider training a machine learning algorithm using federated learning.
 
-If doing so, you should also consider leveraging differential privacy or MPC to maintain privacy when aggregating results from local models into a global model.
+## What is federated learning?
+
+A mechanism for training a machine learning model on remote datasets, rather than on a centralized database. The idea is to train local models directly on users' devices using local data, and then for the devices to share the weights of the resulting model with one another, in order for a new global model to be determined.
+
+This can be centralized federated learning where a central server is responsible for coordinating the actions of participating devices (as shown below), or decentralized federated learning where the participating devices coordinate amongst themselves. In either case, the key feature is that user data never leaves the device, as only model weights are communicated.
+
+An attacker could infer user information from these weights, and mechanisms (such as differential privacy, discussed below) are often incorporated to mitigate this.
+
+![Federated learning](../images/fa.png)
 
 ## Why federated learning?
 
-Relate back to the considerations of the guide...
+Your answers to the questions in the Adoption Guide indicate that:
+
+- You want to use data that is held by others, potentially in combination with data you hold
+- Data processing can be performed on the servers of the parties whose data you want to use
+- You want to train a machine learning model on the data
 
 ## Limitations to consider
 
-TODO
+- Although federated learning provides no direct access to the data, it is possible that information about individuals in the dataset could be inferred from the values of the weights that are computed and shared from each participating device. Applying differential privacy or using a multi-party computation protocol to securely aggregate the weights can help mitigate this risk.
+- Training a machine learning model is computationally expensive, and is often accelerated using specialised hardware such as GPUs. In federated learning, you may not have control over the remote hardware that training will be performed on, which may limit the types of models you can build in this way.
 
 <Collapse label="Technical resources">
-  Link to software libraries, service providers etc.
+
+| Resource                                                                                      | Description                                                                 |
+| :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| <OutboundLink href="https://www.tensorflow.org/federated">TensorFlow Federated</OutboundLink> | A framework for developing federating learning applications with TensorFlow |
+| <OutboundLink href="https://github.com/OpenMined/PyGrid">OpenMined PyGrid</OutboundLink>      | A peer-to-peer data network and platform facilitating federated learning    |
+
 </Collapse>
 
 <Collapse label="Use Cases">
-  TODO: distinguish between FA and FL in repository, maybe? See the full{" "}
-  <a href="/repository">use case repository</a> for additional fields.
+  See the full <a href="/repository">use case repository</a> for additional
+  fields.
   <AdoptionGuideRepositoryTable pet="fa" />
 </Collapse>
 
