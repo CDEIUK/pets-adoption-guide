@@ -19,13 +19,13 @@ export default function RepositoryTable() {
         filter: "includes",
         minWidth: 200,
       },
-      {
-        Header: "Location",
-        accessor: "country",
-        Filter: SelectColumnFilter,
-        filter: "includes",
-        minWidth: 200,
-      },
+      // {
+      //   Header: "Location",
+      //   accessor: "country",
+      //   Filter: SelectColumnFilter,
+      //   filter: "includes",
+      //   minWidth: 200,
+      // },
       {
         Header: "Description",
         accessor: "description",
