@@ -4,19 +4,51 @@ title: De-identification Techniques
 
 import CookieBanner from "../../components/cookies"
 import Collapse from "../../components/collapse"
+import OutboundLink from "../../components/outbound-link"
 
-Based on your responses, you may want to use de-identification techniques.
+Based on your responses, you may want to apply de-identification techniques.
+
+## What are de-identification techniques?
+
+We define a de-identification technique as any data transformation or modification that reduces the amount of information about an individual or entity in a dataset, and/or reduces the risk that an individual or entity can be re-identified. These methods are distinguished from the other PETs described in the guide in that they involve direct manipulation of the raw data, rather than being mechanisms for protecting confidentiality whilst maintaining maximum utility over the underlying data.
+
+De-identification techniques are sometimes called anonymisation techniques, but we purposefully avoid this terminology since it has important legal consequences - truly anonymous data falls outside the remit of UK GDPR. Morover, no matter what level of de-identification techniques are applied to personal data, there is always a residual risk that data can be re-identified by linking it with other datasets, inferring information from proxy variables, or by applying advanced data mining techniques.
+
+Some examples of de-identification techniques are:
+
+- _**Redaction:**_ deleting an entire record or field, or obfuscating part of a record or field (e.g. deleting all but the last 4 digits of a credit card number)
+- _**Tokenization:**_ replacing a real value with a randomly generated value
+- _**Hashing:**_ applying a function to a value to produce a fixed-length value (or hash)
+- _**Generalization:**_ transforming a value to a less precise or bucketed value, e.g. replacing a height of 179cm with a range 170-180cm
+- _**k-anonymity:**_ applying a combination of de-identification techniques so that any record in the dataset becomes indistinguishable from (k-1) records
 
 ## Why de-identification techniques?
 
-Relate back to the considerations of the guide...
+There are several routes through the adoption guide that could have brought you to this page. Firstly:
+
+- You hold data that you want to share with a third party
+- You want to share the raw, row-level data
+- The data could be useful without sensitive information
+
+Secondly:
+
+- You want to use data that is held by others, potentially in combination with data you hold
+- Data processing cannot be performed on the servers of the parties whose data you want to use
+- The data could be useful without sensitive information
+
+In both cases, data is being shared either between organisations or to a central location. As the data can be useful without sensitive information, de-identification techniques should be applied to conceal as much of this information as possible.
 
 ## Limitations to consider
 
-TODO
+- As mentioned above, there is always a risk that data that has been de-identified could be re-identified.
 
-<Collapse label="Technical resources">
-  Link to software libraries, service providers etc.
+<Collapse label="Resources">
+
+| Resource                                                                                                                             | Description                                                                                                                                                                                                                                                                                                                                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <OutboundLink href="https://www.privitar.com/resources/deidentification-guide/">Privitar's guide to de-identification</OutboundLink> | A series of short courses covering the issues and challenges of de-identification, and describing the available de-identification techniques and where to apply them.                                                                                                                                                                                                                |
+| <OutboundLink href="https://ico.org.uk/media/1061/anonymisation-code.pdf">The ICO's Anonymisation Code of Practice</OutboundLink>    | Guidance from the regulator on data anonymisation, which includes case studies of where de-identification techniques have been applied. This guidance is <OutboundLink href="https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2021/03/building-on-the-data-sharing-code-our-plans-for-updating-our-anonymisation-guidance/">set to be updated in 2021</OutboundLink>. |
+
 </Collapse>
 
 Click [here](/adoption-guide) to return to the Adoption Guide.
