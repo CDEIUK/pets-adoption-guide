@@ -17,8 +17,10 @@
   items:
     - label: Additional Resources
       link: /additional-resources
-    - label: Future Work
-      link: /future-work
+    - label: Contact us
+      link: /contact-us
+    - label: Acknowledgements
+      link: /acknowledgements
 - label: Privacy
   items:
     - label: Cookie Policy
