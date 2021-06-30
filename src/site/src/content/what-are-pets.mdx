@@ -26,6 +26,18 @@ Similarly, homomorphic encryption may provide assurance to an organisation condu
 
 ![Homomorphic encryption](./images/he.png)
 
+Homomorphic encryption schemes are separated into three categories, depending on the different types of operations that the scheme permits:
+
+- Partial homomorphic encryption: permits only a single type of operation (e.g. addition) on encrypted data.
+- Somewhat homomorphic encryption: permits some combinations of operations (e.g. some additions and multiplications) on encrypted data.
+- Fully homomorphic encryption: premits arbitrary operations on encryption data.
+
+### Limitations to consider
+
+- FHE allows arbitrary operations, but existing schemes are generally impractical as they incur a significant computational overhead. However, this is an active area of research where improvements are likely to occur in the future.
+- Whilst PHE and SHE schemes are more performant, they support only a limited number of operations, and the nature of the operations that will be required by a system must be known in advance so that an appropriate specific encryption scheme can be selected.
+- When outsourcing to a third party data processor, you should be mindful of the fact that because the third party cannot read any of the data, it may be more complicated to identify sources of error or develop new code against the data. You must therefore agree and adhere to a schema for the data in advance. Additionally, you may wish to share a plaintext dummy dataset that matches the schema of the real dataset, which the third party can use to develop and test their code against.
+
 </Collapse>
 
 <Collapse label="Trusted Execution Environments">
@@ -36,6 +48,12 @@ The use cases for TEEs are similar to homomorphic encryption. A data controller 
 
 ![Trusted execution environment](./images/tee.png)
 
+### Limitations to consider
+
+- TEEs may be at risk of side-channel attacks, where information about the computation taking place within a TEE are inferred from signals produced by the computing system, such as power consumption or memory utilisation.
+- As TEEs are hardware-based, they can be difficult to patch for vulnerabilities. For example, if a new side-channel attack vector is discovered, the physical chip containing the TEE may need to be replaced to mitigate the threat.
+- There is no industry standard for interacting with TEEs, and each vendor's TEE design is bespoke. Applications leveraging TEEs thus have to be coded according to the TEE vendor's API, which can lead to vendor lock-in.
+
 </Collapse>
 
 <Collapse label="Multi-party computation">
@@ -45,6 +63,13 @@ A multi-party computation (MPC) protocol enables a function taking input from mu
 To gain an intuitive understanding of MPC, consider a group of employees who want to determine their average salary, without revealing their individual salaries to one another. The below figure illustrates how MPC can be implemented using additive secret sharing, relying on basic mathematical properties of addition to split the computation between the parties such that salaries remain confidential. A correct result is obtained by recombining the results of each party’s computations. In practice, MPC protocols are more complex than this naive example, so as to be secure and support a wide range of operations.
 
 ![Multi-party computation](./images/mpc.png)
+
+### Limitations to consider
+
+- MPC protocols typically do not scale to generic data analysis tasks, meaning protocols have to be tailored to the specific task at hand.
+- The need for nodes to talk to one another incurs a communications overhead in comparison to computing on a single, centralised dataset. This means that more complex protocols, that require a greater number of exchanges of information between nodes, may be impractical in real world setups.
+- Dishonest and/or colluding parties could potentially disrupt an MPC protocol or leak information from the system - protocols should be designed for resiliency to any such attack vectors.
+- There may be situations where the output from an MPC protocol can be used to infer information about the input data. As an illustrative example, imagine a system that calculates the percentage of individuals testing positive for a disease. You also know which individuals are participating in the study. If the result is 60%, you cannot determine which specific individuals are positive. However, if the result is 100%, you know with certainty that every individual is positive - personal information has been leaked. It is therefore important to understand the knowledge each participant in the network has, and what the range of potential results is, so that steps can be taken to minimise the risk of unintended information leakage.
 
 </Collapse>
 
@@ -60,6 +85,12 @@ An attacker could infer user information from these weights, and mechanisms (suc
 
 ![Federated learning](./images/fa.png)
 
+### Limitations to consider
+
+- Although federated analytics provides no direct access to the data, it is possible that information about individuals in the dataset could be inferred from the output of the analysis. Performing the analysis in a differentially private way is one method for mitigating this risk.
+- Not having direct access to the data can make it more difficult to develop, test, and troubleshoot code. Details of the schema and standards used by the remote database should be shared to help mitigate this, as well as dummy data that a developer can use to validate the functionality of their code.
+- Training a machine learning model is computationally expensive, and is often accelerated using specialised hardware such as GPUs. In federated learning, you may not have control over the remote hardware that training will be performed on, which may limit the types of models you can build in this way.
+
 </Collapse>
 
 <Collapse label="Differential Privacy">
@@ -71,6 +102,11 @@ Differential privacy was developed in response to a 2003 paper by Irit Nisur and
 The privacy-utility trade-off is formalised through the concept of Ɛ-differential privacy. Querying a model leaks information about the dataset, and the amount of information leakage increases with the number of queries. The parameter Ɛ quantifies this leakage and is known as the privacy budget. A user is stopped from performing further queries if they exceed their budget. Equivalently, Ɛ can be thought of as the maximum permissible difference between the result of a query performed against a model, and the result of an identical query performed against a model where an individual has been omitted from the dataset.
 
 ![Differential privacy](./images/dp.png)
+
+### Limitations to consider
+
+- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
+- Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
 
 </Collapse>
 
@@ -85,5 +121,9 @@ Some examples of de-identification techniques are:
 - _**Hashing:**_ applying a function to a value to produce a fixed-length value (or hash)
 - _**Generalization:**_ transforming a value to a less precise or bucketed value, e.g. replacing a height of 179cm with a range 170-180cm
 - _**k-anonymity:**_ applying a combination of de-identification techniques so that any record in the dataset becomes indistinguishable from (k-1) records
+
+### Limitations to consider
+
+- No matter what level of de-identification techniques are applied to personal data, there is always a residual risk that data can be re-identified by linking it with other datasets, inferring information from proxy variables, or by applying advanced data mining techniques
 
 </Collapse>
