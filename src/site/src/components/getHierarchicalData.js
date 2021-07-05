@@ -27,47 +27,47 @@ function getHierarchicalData() {
                 description: "Raw data",
                 children: [
                   {
-                    id: 6,
+                    id: 5,
                     name: "Q3",
                     type: "Organism",
                     description:
                       "Does sensitive / personally identifiable information need to be included in the dataset that is shared, or could it be useful without it?",
                     children: [
                       {
-                        id: 7,
+                        id: 6,
                         name: "A3-1",
                         type: "Organism",
                         description:
                           "Sensitive information needs to be included",
                         children: [
                           {
-                            id: 9,
+                            id: 7,
                             name: "Q4",
                             type: "Organism",
                             description:
                               "Is the party you are sharing data with performing computation / analysis on your behalf, or for their own means?",
                             children: [
                               {
-                                id: 10,
+                                id: 8,
                                 name: "A4-1",
                                 type: "Organism",
                                 description: "On my behalf",
                                 children: [
                                   {
-                                    id: 12,
+                                    id: 9,
                                     name: "Q5",
                                     type: "Organism",
                                     description:
                                       "Is it in important that the computation / analysis is done with low latency?",
                                     children: [
                                       {
-                                        id: 13,
+                                        id: 10,
                                         name: "A5-1",
                                         type: "Organism",
                                         description: "Yes",
                                         children: [
                                           {
-                                            id: 16,
+                                            id: 11,
                                             name: "RESULT",
                                             type: "Organism",
                                             description:
@@ -81,13 +81,13 @@ function getHierarchicalData() {
                                         ],
                                       },
                                       {
-                                        id: 14,
+                                        id: 12,
                                         name: "A5-2",
                                         type: "Organism",
                                         description: "No",
                                         children: [
                                           {
-                                            id: 15,
+                                            id: 13,
                                             name: "RESULT",
                                             type: "Organism",
                                             description:
@@ -104,13 +104,13 @@ function getHierarchicalData() {
                                 ],
                               },
                               {
-                                id: 11,
+                                id: 14,
                                 name: "A4-2",
                                 type: "Organism",
                                 description: "For their own means",
                                 children: [
                                   {
-                                    id: 17,
+                                    id: 15,
                                     name: "RESULT",
                                     type: "Organism",
                                     description:
@@ -127,14 +127,14 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 8,
+                        id: 16,
                         name: "A3-2",
                         type: "Organism",
                         description:
                           "Data could be useful without sensitive information",
                         children: [
                           {
-                            id: 99,
+                            id: 17,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -151,26 +151,26 @@ function getHierarchicalData() {
                 ],
               },
               {
-                id: 5,
+                id: 18,
                 name: "A2-2",
                 type: "Organism",
                 description: "Insights from the data",
                 children: [
                   {
-                    id: 987,
+                    id: 19,
                     name: "QN",
                     type: "Organism",
                     description:
                       "Is the data such that generalisations can be made over a population?",
                     children: [
                       {
-                        id: 986,
+                        id: 20,
                         name: "AN-1",
                         type: "Organism",
                         description: "Yes",
                         children: [
                           {
-                            id: 18,
+                            id: 21,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -183,13 +183,13 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 985,
+                        id: 22,
                         name: "AN-2",
                         type: "Organism",
                         description: "No",
                         children: [
                           {
-                            id: 934,
+                            id: 23,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -210,41 +210,41 @@ function getHierarchicalData() {
         ],
       },
       {
-        id: 19,
+        id: 24,
         name: "A1-2",
         type: "Type",
         description:
           "You want to leverage data held by other parties / users, or use data held by others in combination with your own",
         children: [
           {
-            id: 20,
+            id: 25,
             name: "Q2",
             type: "Family",
             description:
               "Could data processing be performed on the devices/servers of the parties involved, or does processing need to be performed centrally?",
             children: [
               {
-                id: 21,
+                id: 26,
                 name: "A2-1",
                 type: "Organism",
                 description: "Processing on remote devices/servers",
                 children: [
                   {
-                    id: 23,
+                    id: 27,
                     name: "Q3",
                     type: "Organism",
                     description:
                       "Which of the following best describes your use case?",
                     children: [
                       {
-                        id: 24,
+                        id: 28,
                         name: "A3-1",
                         type: "Organism",
                         description:
                           "You want to train a machine learning model on the data",
                         children: [
                           {
-                            id: 26,
+                            id: 29,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -257,14 +257,14 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 24,
+                        id: 30,
                         name: "A3-100",
                         type: "Organism",
                         description:
                           "You want to perform tradional data science/statistical techniques on the data",
                         children: [
                           {
-                            id: 26,
+                            id: 31,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -277,14 +277,14 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 24,
+                        id: 32,
                         name: "A3-1",
                         type: "Organism",
                         description:
                           "You want to derive a specific result from the collective data of the parties",
                         children: [
                           {
-                            id: 26,
+                            id: 33,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -301,27 +301,27 @@ function getHierarchicalData() {
                 ],
               },
               {
-                id: 22,
+                id: 34,
                 name: "A2-2",
                 type: "Organism",
                 description: "Processing centrally",
                 children: [
                   {
-                    id: 32,
+                    id: 35,
                     name: "lksadn",
                     type: "Organism",
                     description:
-                      "Does sensitive / personally identifiable information need to be included in the dataset that is shared, or could it be useful without it?",
+                      "Does sensitive / personally identifiable information need to be included in the data that is shared, or could it be useful without it?",
                     children: [
                       {
-                        id: 1022,
+                        id: 36,
                         name: "A2-2",
                         type: "Organism",
                         description:
                           "Sensitive information needs to be included",
                         children: [
                           {
-                            id: 32,
+                            id: 37,
                             name: "RESULT",
                             type: "Organism",
                             description:
@@ -334,14 +334,14 @@ function getHierarchicalData() {
                         ],
                       },
                       {
-                        id: 1027,
+                        id: 38,
                         name: "A2-2",
                         type: "Organism",
                         description:
                           "Data could be useful without sensitive information",
                         children: [
                           {
-                            id: 876,
+                            id: 39,
                             name: "RESULT",
                             type: "Organism",
                             description:
