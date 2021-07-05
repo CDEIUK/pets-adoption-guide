@@ -14,7 +14,39 @@ Traditional PETs are well-established privacy techniques, such as encryption sch
 
 Emerging PETs are a group of technologies that have begun to provide novel solutions to privacy challenges in modern data-driven systems. There is no fixed definition of what PETs fall into this group, but here we primarily consider five technologies: homomorphic encryption, trusted execution environments, secure multi-party computation, differential privacy, and systems for federated data processing.
 
-## Descriptions of PETs
+## Traditional PETs
+
+<Collapse label="Encryption in transit and at rest">
+
+Encryption is one of the principal security technologies used to protect information. Encryption converts legible data into a so-called _ciphertext_ - a representation of the data that is unreadable by a human or a computer. The data can only be read by first decrypting it, which requires access to an appropriate _decryption key_. Thus, data is kept secret from everyone who does not have access to this key.
+
+_In transit_ encryption secures data as it flows between two connected computers. For example, when you login to a website your username and password are first encrypted before being sent over the internet to the website in question, ensuring that a bad actor eavesdropping on your connection is not able to learn your credentials.
+
+_At rest_ encryption secures data for storage on disk. For example, you may well be using a computer that stores data on an encrypted hard drive. This ensures that data stored on your computer cannot be read by an unauthorised user attempting to access your computer.
+
+In transit and at rest encryption are mature technologies that are commonplace. They should be considered standard practice when sending information over the internet, and when storing sensitive information on disk.
+
+</Collapse>
+
+<Collapse label="De-identification Techniques">
+
+We define a de-identification technique as any data transformation or modification that reduces the amount of information about an individual or entity in a dataset, and/or reduces the risk that an individual or entity can be re-identified. These methods are distinguished from the PETs described above in that they involve direct manipulation of the raw data, rather than being mechanisms for protecting confidentiality whilst maintaining maximum utility over the underlying data.
+
+Some examples of de-identification techniques are:
+
+- _**Redaction:**_ deleting an entire record or field, or obfuscating part of a record or field (e.g. deleting all but the last 4 digits of a credit card number)
+- _**Tokenization:**_ replacing a real value with a randomly generated value
+- _**Hashing:**_ applying a function to a value to produce a fixed-length value (or hash)
+- _**Generalization:**_ transforming a value to a less precise or bucketed value, e.g. replacing a height of 179cm with a range 170-180cm
+- _**k-anonymity:**_ applying a combination of de-identification techniques so that any record in the dataset becomes indistinguishable from (k-1) records
+
+### Limitations to consider
+
+- No matter what level of de-identification techniques are applied to personal data, there is always a residual risk that data can be re-identified by linking it with other datasets, inferring information from proxy variables, or by applying advanced data mining techniques
+
+</Collapse>
+
+## Emerging PETs
 
 <Collapse label="Homomorphic encryption">
 
@@ -48,7 +80,7 @@ The use cases for TEEs are similar to homomorphic encryption. A data controller 
 
 ![Trusted execution environment](./images/tee.png)
 
-### Limitations to consider
+### Limitations to consider
 
 - TEEs may be at risk of side-channel attacks, where information about the computation taking place within a TEE are inferred from signals produced by the computing system, such as power consumption or memory utilisation.
 - As TEEs are hardware-based, they can be difficult to patch for vulnerabilities. For example, if a new side-channel attack vector is discovered, the physical chip containing the TEE may need to be replaced to mitigate the threat.
@@ -107,23 +139,5 @@ The privacy-utility trade-off is formalised through the concept of Ɛ-differenti
 
 - Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
 - Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
-
-</Collapse>
-
-<Collapse label="De-identification Techniques">
-
-We define a de-identification technique as any data transformation or modification that reduces the amount of information about an individual or entity in a dataset, and/or reduces the risk that an individual or entity can be re-identified. These methods are distinguished from the PETs described above in that they involve direct manipulation of the raw data, rather than being mechanisms for protecting confidentiality whilst maintaining maximum utility over the underlying data.
-
-Some examples of de-identification techniques are:
-
-- _**Redaction:**_ deleting an entire record or field, or obfuscating part of a record or field (e.g. deleting all but the last 4 digits of a credit card number)
-- _**Tokenization:**_ replacing a real value with a randomly generated value
-- _**Hashing:**_ applying a function to a value to produce a fixed-length value (or hash)
-- _**Generalization:**_ transforming a value to a less precise or bucketed value, e.g. replacing a height of 179cm with a range 170-180cm
-- _**k-anonymity:**_ applying a combination of de-identification techniques so that any record in the dataset becomes indistinguishable from (k-1) records
-
-### Limitations to consider
-
-- No matter what level of de-identification techniques are applied to personal data, there is always a residual risk that data can be re-identified by linking it with other datasets, inferring information from proxy variables, or by applying advanced data mining techniques
 
 </Collapse>
