@@ -60,9 +60,9 @@ Similarly, homomorphic encryption may provide assurance to an organisation condu
 
 Homomorphic encryption schemes are separated into three categories, depending on the different types of operations that the scheme permits:
 
-- Partial homomorphic encryption: permits only a single type of operation (e.g. addition) on encrypted data.
-- Somewhat homomorphic encryption: permits some combinations of operations (e.g. some additions and multiplications) on encrypted data.
-- Fully homomorphic encryption: premits arbitrary operations on encryption data.
+- Partial homomorphic encryption (PHE): permits only a single type of operation (e.g. addition) on encrypted data.
+- Somewhat homomorphic encryption (SHE): permits some combinations of operations (e.g. some additions and multiplications) on encrypted data.
+- Fully homomorphic encryption (FHE): premits arbitrary operations on encryption data.
 
 ### Limitations to consider
 
@@ -82,7 +82,7 @@ The use cases for TEEs are similar to homomorphic encryption. A data controller 
 
 ### Limitations to consider
 
-- TEEs may be at risk of side-channel attacks, where information about the computation taking place within a TEE are inferred from signals produced by the computing system, such as power consumption or memory utilisation.
+- Use of TEEs still relies on a level of trust between parties that environments have been set up correctly, and as with any system there is always a level of security risk, e.g. via side-channel attacks, where information about the computation taking place within a TEE are inferred from signals produced by the computing system, such as power consumption or memory utilisation.
 - As TEEs are hardware-based, they can be difficult to patch for vulnerabilities. For example, if a new side-channel attack vector is discovered, the physical chip containing the TEE may need to be replaced to mitigate the threat.
 - There is no industry standard for interacting with TEEs, and each vendor's TEE design is bespoke. Applications leveraging TEEs thus have to be coded according to the TEE vendor's API, which can lead to vendor lock-in.
 
@@ -99,7 +99,7 @@ To gain an intuitive understanding of MPC, consider a group of employees who wan
 ### Limitations to consider
 
 - MPC protocols typically do not scale to generic data analysis tasks, meaning protocols have to be tailored to the specific task at hand.
-- The need for nodes to talk to one another incurs a communications overhead in comparison to computing on a single, centralised dataset. This means that more complex protocols, that require a greater number of exchanges of information between nodes, may be impractical in real world setups.
+- The need for nodes to talk to one another incurs a communications overhead in comparison to computing on a single, centralised dataset. This means that more complex protocols, that require a greater number of exchanges of information between nodes, may be impractical in real world setups (especially where the nodes cannot be co-located within a low latency network).
 - Dishonest and/or colluding parties could potentially disrupt an MPC protocol or leak information from the system - protocols should be designed for resiliency to any such attack vectors.
 - There may be situations where the output from an MPC protocol can be used to infer information about the input data. As an illustrative example, imagine a system that calculates the percentage of individuals testing positive for a disease. You also know which individuals are participating in the study. If the result is 60%, you cannot determine which specific individuals are positive. However, if the result is 100%, you know with certainty that every individual is positive - personal information has been leaked. It is therefore important to understand the knowledge each participant in the network has, and what the range of potential results is, so that steps can be taken to minimise the risk of unintended information leakage.
 
