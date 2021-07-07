@@ -7,13 +7,17 @@ import CookieBanner from "../components/cookies"
 import Tree from "../components/tree"
 import getHierarchicalData from "../components/getHierarchicalData"
 
+The Adoption Guide below is a question-based flowchart to aid decision-makers in thinking through which of the PETs discussed on this site may be useful in their projects.
+
+The guide does not claim to cover all use cases of PETs, but aims to aid decision-making around using PETs. Then guide provides pointers to different resources and example use cases that may help you better understand how you can implement these technologies in practice.
+
+However, it is important to understand that using an individual PET does not in itself guarantee an improvement in privacy unless accompanied by a good overall privacy design, and appropriate governance arrangements. You can explore good practices for sharing and processing data [here](/adoption-guide/good-practice).
+
 ## Using the guide
 
 - The guide is primarily aimed at technical architects and product owners working on projects that involve the sharing or processing of sensitive information.
 - Answer the questions that appear in the decision tree by clicking on the box containing the appropriate answer. Do this until you reach an end node which can be clicked to display further information.
 - You can explore the whole decision tree structure by clicking to expand the various different nodes in the tree.
 - Click and drag within the black box to pan through the tree diagram, and use your mouse wheel or trackpad to zoom in and out.
-
-The guide does not claim to cover all use cases of PETs, but aims to aid decision-making around using PETs in practice.
 
 <Tree data={getHierarchicalData()} />
