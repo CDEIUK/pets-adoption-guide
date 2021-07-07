@@ -313,8 +313,8 @@ function getHierarchicalData() {
                             description:
                               "You should consider collecting and processing the data securely within a trusted execution environment. Click for further information.",
                             link:
-                              "/pets-adoption-guide/adoption-guide/trusted-execution-environment", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/adoption-guide/trusted-execution-environment",
+                              "/pets-adoption-guide/adoption-guide/trusted-execution-environments", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/trusted-execution-environments",
                             children: [],
                           },
                         ],
