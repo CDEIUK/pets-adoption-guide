@@ -122,10 +122,10 @@ function getHierarchicalData() {
                             name: "RESULT",
                             type: "RESULT",
                             description:
-                              "The emerging PETs discussed here  may not provide a suitable solution. Ensure you follow existing best practices for sharing and processing data. Click for further information.",
+                              "The emerging PETs discussed here  may not provide a suitable solution. Ensure you follow good practices for sharing and processing data. Click for further information.",
                             link:
-                              "/pets-adoption-guide/adoption-guide/best-practice", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
-                            // link: "/adoption-guide/best-practice",
+                              "/pets-adoption-guide/adoption-guide/good-practice", // annoyingly there's some dodgy path stuff that means prod and dev links need to be changed here manually. Technical debt!
+                            // link: "/adoption-guide/good-practice",
                             children: [],
                           },
                         ],
