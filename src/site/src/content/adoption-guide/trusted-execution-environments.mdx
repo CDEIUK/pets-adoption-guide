@@ -18,15 +18,22 @@ The use cases for TEEs are similar to homomorphic encryption. A data controller 
 
 ## Why trusted execution environments?
 
-Your answers to the questions in the Adoption Guide indicate that:
+There are two paths through the Adoption Guide leading to this page. Firstly:
 
-- You hold data that you want to share with a third party
-- You want to share the raw, row-level data
+- You want to enable raw data to be accessed by another party
 - Sensitive information needs to be included in the dataset
 - You are sharing the data so as to outsource data processing to the third party
-- Latency is critical
+- You are performing calculations that are highly complex and/or have low latency requirements
 
-A trusted execution environment is therefore potentially a suitable solution, as it allows processing to be outsourced to a third party whilst the data remains protected in a secure processing environment, meaning the third party cannot access the sensitive information in the dataset.
+In this scenario, a TEE is potentially a suitable solution as it allows processing to be outsourced to a third party whilst the data remains protected in a secure processing environment, meaning the third party cannot access the sensitive information in the dataset. [Homomorphic encryption](/adoption-guide/homomorphic-encryption) could also be a suitable solution, depending on the specific calculations you want to perform; in general, TEEs may be better suited to more complex calculations or to scenarios requiring low latency.
+
+Secondly:
+
+- You want to collaborate with multiple partners to conduct analysis on your collective data
+- Data processing needs to be done centrally
+- Sensitive information needs to be included in the dataset
+
+In this case, each party could upload their data into a shared TEE for data processing, so that no one party sees the data contributed by any other party.
 
 ## Limitations to consider
 

@@ -29,11 +29,10 @@ Homomorphic encryption schemes are separated into three categories, depending on
 
 Your answers to the questions in the Adoption Guide indicate that:
 
-- You hold data that you want to share with a third party
-- You want to share the raw, row-level data
+- You want to share raw data with another party
 - Sensitive information needs to be included in the dataset
 - You are sharing the data so as to outsource data processing to the third party
-- Latency is not critical
+- You are performing calculations that are relatively simple and/or have no strong latency requirements
 
 Homomorphic encryption is therefore potentially a suitable solution, as it allows processing to be outsourced to a third party whilst the data remains encrypted throughout, meaning the third party cannot access the sensitive information in the dataset. Computing on encrypted data is more computationally intensive than computing on unencrypted data, which increases latency. If latency is a more critical requirement, [trusted execution environments](/adoption-guide/trusted-execution-environments) may provide a suitable alternative solution.
 
