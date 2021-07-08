@@ -8,11 +8,11 @@ import AdoptionGuideRepositoryTable from "../../components/adoption-guide-reposi
 
 Based on your responses, you may want to consider trusted execution environments.
 
-## What are trusted execution environment?
+## What are trusted execution environments?
 
 A trusted execution environment (TEE) is a processing environment isolated from a computer’s main processor and memory. Code or data held within this environment cannot be accessed from the main processor, and communications between the main processor and the TEE are encrypted.
 
-The use cases for TEEs are similar to homomorphic encryption. A data controller can store their data within a TEE, to be operated on by an untrusted third party’s code also held within the TEE. Processing within the TEE occurs directly on unencrypted data - this means processing is likely to be faster than with homomorphic encryption, due to computational overhead incurred by the latter.. Once calculated, the result is encrypted before being communicated back to the data controller, who has access to the appropriate decryption key.
+The use cases for TEEs are similar to homomorphic encryption. A data controller can store their data within a TEE, to be operated on by an untrusted third party’s code also held within the TEE. Processing within the TEE occurs directly on unencrypted data - this means processing is likely to be faster than with homomorphic encryption, due to computational overhead incurred by the latter. Once calculated, the result is encrypted before being communicated back to the data controller, who has access to the appropriate decryption key.
 
 ![Trusted execution environment](../images/tee.png)
 

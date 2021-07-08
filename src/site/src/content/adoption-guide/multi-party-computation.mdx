@@ -31,7 +31,7 @@ Using a multi-party computation protocol is therefore a possible solution, as th
 ## Limitations to consider
 
 - MPC protocols typically do not scale to generic data analysis tasks, meaning protocols have to be tailored to the specific task at hand.
-- The need for nodes to talk to one another incurs a communications overhead in comparison to computing on a single, centralised dataset. This means that more complex protocols, that require a greater number of exchanges of information between nodes, may be impractical in real world setups.
+- The need for nodes to talk to one another incurs a communications overhead in comparison to computing on a single, centralised dataset. This means that more complex protocols, that require a greater number of exchanges of information between nodes, may be impractical in real-world setups.
 - Dishonest and/or colluding parties could potentially disrupt an MPC protocol or leak information from the system - protocols should be designed for resiliency to any such attack vectors.
 - There may be situations where the output from an MPC protocol can be used to infer information about the input data. As an illustrative example, imagine a system that calculates the percentage of individuals testing positive for a disease. You also know which individuals are participating in the study. If the result is 60%, you cannot determine which specific individuals are positive. However, if the result is 100%, you know with certainty that every individual is positive - personal information has been leaked. It is therefore important to understand the knowledge each participant in the network has, and what the range of potential results is, so that steps can be taken to minimise the risk of unintended information leakage.
 
