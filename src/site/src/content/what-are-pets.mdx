@@ -105,6 +105,23 @@ To gain an intuitive understanding of MPC, consider a group of employees who wan
 
 </Collapse>
 
+<Collapse label="Differential Privacy">
+
+Differential privacy is a formal definition of privacy requiring that the output of any statistical analysis reveals no information specific to an individual in the dataset. An algorithm is typically made differentially private by adding noise to either the input data (local differential privacy) or to the output it produces (global differential privacy).
+
+Differential privacy was developed in response to a 2003 paper by Irit Nisur and Kobbi Nissim which established the fundamental law of information recovery: overly accurate answers to too many queries of a statistical model enables dataset recovery. It follows that in order for the data used to build a model to be private, the model must necessarily be inaccurate to some extent. The amount of noise must be chosen carefully: too little and the dataset will not be private, too much and the output will be so inaccurate as to be useless. This is the _**privacy-utility trade-off**_.
+
+The privacy-utility trade-off is formalised through the concept of Ɛ-differential privacy. Querying a model leaks information about the dataset, and the amount of information leakage increases with the number of queries. The parameter Ɛ quantifies this leakage and is known as the privacy budget. A user is stopped from performing further queries if they exceed their budget. Equivalently, Ɛ can be thought of as the maximum permissible difference between the result of a query performed against a model, and the result of an identical query performed against a model where an individual has been omitted from the dataset.
+
+![Differential privacy](./images/dp.png)
+
+### Limitations to consider
+
+- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
+- Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
+
+</Collapse>
+
 <Collapse label="Federated Analytics">
 
 Federated analytics is a paradigm for executing a computer program against decentralised data. This involves a party uploading the program to the server or device on which the data is situated, executing it on the server or device with the data in situ, and communicating the results back to the originating party. In this way, no data is directly revealed to the party.
@@ -122,22 +139,5 @@ An attacker could infer user information from these weights, and mechanisms (suc
 - Although federated analytics provides no direct access to the data, it is possible that information about individuals in the dataset could be inferred from the output of the analysis. Performing the analysis in a differentially private way is one method for mitigating this risk.
 - Not having direct access to the data can make it more difficult to develop, test, and troubleshoot code. Details of the schema and standards used by the remote database should be shared to help mitigate this, as well as dummy data that a developer can use to validate the functionality of their code.
 - Training a machine learning model is computationally expensive, and is often accelerated using specialised hardware such as GPUs. In federated learning, you may not have control over the remote hardware that training will be performed on, which may limit the types of models you can build in this way.
-
-</Collapse>
-
-<Collapse label="Differential Privacy">
-
-Differential privacy is a formal definition of privacy requiring that the output of any statistical analysis reveals no information specific to an individual in the dataset. An algorithm is typically made differentially private by adding noise to either the input data (local differential privacy) or to the output it produces (global differential privacy).
-
-Differential privacy was developed in response to a 2003 paper by Irit Nisur and Kobbi Nissim which established the fundamental law of information recovery: overly accurate answers to too many queries of a statistical model enables dataset recovery. It follows that in order for the data used to build a model to be private, the model must necessarily be inaccurate to some extent. The amount of noise must be chosen carefully: too little and the dataset will not be private, too much and the output will be so inaccurate as to be useless. This is the _**privacy-utility trade-off**_.
-
-The privacy-utility trade-off is formalised through the concept of Ɛ-differential privacy. Querying a model leaks information about the dataset, and the amount of information leakage increases with the number of queries. The parameter Ɛ quantifies this leakage and is known as the privacy budget. A user is stopped from performing further queries if they exceed their budget. Equivalently, Ɛ can be thought of as the maximum permissible difference between the result of a query performed against a model, and the result of an identical query performed against a model where an individual has been omitted from the dataset.
-
-![Differential privacy](./images/dp.png)
-
-### Limitations to consider
-
-- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
-- Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
 
 </Collapse>
