@@ -6,7 +6,7 @@ import CookieBanner from "../../components/cookies"
 import Collapse from "../../components/collapse"
 import OutboundLink from "../../components/outbound-link"
 
-Whether you are using emerging PETs or not, there are best practices that should be followed to ensure data is shared and processed securely and responsibly. Using an individual PET does not in itself guarantee an improvement in privacy unless accompanied by a good overall privacy design, and appropriate governance arrangements. Examples of good practice include:
+Whether you are using emerging PETs or not, there are best practices that should be followed to ensure data is shared and processed securely and responsibly. Using an individual PET does not in itself guarantee an improvement in privacy unless accompanied by a good overall privacy and security design, and appropriate governance arrangements. Examples of good practice include:
 
 ## Data sharing agreement
 
@@ -16,13 +16,21 @@ Whilst it is not a legal requirement to create a data sharing agreement, it can 
 
 Depending on the specific use case, it may be the case that you and other parties are acting as joint controllers over the data being shared, which comes with additional legal obligations under UK GDPR. You should consult the <OutboundLink href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/controllers-and-processors/what-does-it-mean-if-you-are-joint-controllers/">ICO's guidance</OutboundLink> for advice on this.
 
-## Making data available via APIs
-
-Making data accessible via Application Programming Interfaces (APIs) can enable data to be shared in a more efficient, automated, and secure way. Organisations should seek to implement authenticated APIs rather than sharing datasets as spreadsheets via email, for example.
+Specific legal issues apply when sharing personal data across national boundaries.
 
 ## Cybersecurity standards
 
-Organisations storing or handling sensitive data must meet sufficiently high standards of cybersecurity. The National Cyber Security Centre provide a number of resources, including the <OutboundLink href="https://www.ncsc.gov.uk/cyberessentials/overview">Cyber Essentials</OutboundLink> certification.
+Organisations storing or handling sensitive data must meet sufficiently high standards of security, through an appropriate balance of technical, procedural and personnel controls.
+
+Relevant organisational standards for your organisation, or a partner that you are sharing data with, include ISO27001, or at a more basic level the National Cyber Security Centre's (NCSC's) <OutboundLink href="https://www.ncsc.gov.uk/cyberessentials/overview">Cyber Essentials certification</OutboundLink>.
+
+For analysing your approach to protecting a specific bulk data set, the NCSC provides an excellent <OutboundLink href="https://www.ncsc.gov.uk/collection/protecting-bulk-personal-data">good practice guide to protecting bulk personal data</OutboundLink>.
+
+It's worth noting that analytics environments which bring together large amounts of data for analysis or to train a model may well need a different approach to security than operational environments, for example as data scientists may well need more flexible access to sensitive data sets than operational teams.
+
+## Making data available via APIs
+
+Making data accessible via Application Programming Interfaces (APIs) can enable data to be shared in a more efficient, automated, and secure way, for example by limiting sharing of data to the specific records that are required. Organisations should seek to implement authenticated APIs rather than sharing datasets as spreadsheets via email, for example.
 
 ## Access controls and auditing infrastructure
 
