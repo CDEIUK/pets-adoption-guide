@@ -21,17 +21,14 @@ The privacy-utility trade-off is formalised through the concept of Ɛ-differenti
 
 ## Why differential privacy?
 
-Your answers to the questions in the Adoption Guide indicate that:
+Your answers to the questions in the Adoption Guide indicate that you want to generate and publish insights derived from a dataset.
 
-- You hold data that you want to share with a third party
-- You don't want to share the raw data, but rather insights derived from the raw data
-- The data is such that generalisations can be made over a population
-
-Differential privacy is therefore potentially a suitable solution, as it allows insights derived from the raw data to be shared, whilst providing a mathematical guarantee on the amount of information that can be inferred about any individual row in the dataset.
+In his case, differential privacy could be considered. Differential privacy allows insights derived from raw data to be shared, whilst providing a mathematical guarantee on the amount of information that can be inferred about any individual row in the dataset.
 
 ## Limitations to consider
 
-- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific
+- Choosing a suitable valuable for the privacy budget is often challenging and highly context-specific.
+- For differential privacy to work well, you will likely need to be using structured data with a large sample size.
 - Inaccuracies introduced by noise will be more pronounced for smaller sub-populations. For example, <OutboundLink href="https://www.adn.com/nation-world/2021/04/13/16-states-including-alaska-back-alabama-challenge-to-census-bureaus-new-privacy-tool/">critics of the US Census Bureau's use of differential privacy</OutboundLink> have argued that it leads to an inaccurate understanding of local demographics, which could lead to communities being adversely affected by policy decisions that are made based on that data.
 
 <Collapse label="Technical resources">
