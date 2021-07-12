@@ -13,10 +13,10 @@
       link: /adoption-guide
     - label: Repository of Use Cases
       link: /repository
-    - label: Good practice for sharing and processing data
-      link: /good-practice
 - label: Further information
   items:
+    - label: Good practice for sharing and processing data
+      link: /good-practice
     - label: Additional Resources
       link: /additional-resources
     - label: Contact us
