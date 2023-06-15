@@ -13,7 +13,8 @@
    "link3": "",
    "link1URL": "https://www.turing.ac.uk/research/publications/differentially-private-health-tokens-estimating-covid-19-risk",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Apple",
@@ -29,7 +30,8 @@
    "link3": "",
    "link1URL": "https://www.technologyreview.com/2019/12/11/131629/apple-ai-personalizes-siri-federated-learning/",
    "link2URL": "https://machinelearning.apple.com/research/learning-with-privacy-at-scale",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Apple/Google contact tracing API",
@@ -45,7 +47,8 @@
    "link3": "",
    "link1URL": "https://www.google.com/covid19/exposurenotifications/#exposure-notifications-and-privacy",
    "link2URL": "https://covid19.apple.com/contacttracing",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "AUSTRAC",
@@ -61,7 +64,8 @@
    "link3": "",
    "link1URL": "https://www.linkedin.com/pulse/australia-unveils-world-first-privacy-preserving-fintel-nathan-lynch/",
    "link2URL": "https://www.future-fis.com/uploads/3/7/9/4/3794525/ffis_innovation_and_discussion_paper_-_case_studies_of_the_use_of_privacy_preserving_analysis.pdf",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Boston Women's Workforce Council (BWWC) and Boston University's Hariri Institute for Computing",
@@ -77,7 +81,8 @@
    "link3": "",
    "link1URL": "https://thebwwc.org/mpc",
    "link2URL": "https://ieeexplore.ieee.org/abstract/document/7839796",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Danisco and the Association of Sugar Beet Growers",
@@ -93,7 +98,25 @@
    "link3": "",
    "link1URL": "https://eprint.iacr.org/2008/068.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Data Sharing Coalition",
+   "country": "",
+   "sector": "Health and Social Care",
+   "description": "In the Netherlands, a public-private coalition of organisations came together to build better insights into provisions and needs in the elderly care system. In order to make use of sensitive health and care data, privacy tech company, Linksight, worked together with health insurer DSW and the local \"Zorgkantoor\" (municipal health and social care office), and created a data analysis platform using Multi-Party Computation. The Dutch elderly care system is facing rising care needs and monitoring this demand has been limited by barriers including privacy risks, cost to access data, and fragmentation of data, which is held by different parties. Using the platform (since only the aggregated data is viewed by the parties involved) the risks and costs for sharing and access are lower, and the resultant insights can be used by policy-makers to respond to the need better. The platform is currently used in the Delft, Schieland and Westland region of the Netherlands, but the Data Sharing Coalition highlights an ambition to scale this up to the national level.",
+   "stage-of-dev": "Product",
+   "pets1": "Multi-party Computation",
+   "pets2": "",
+   "pets3": "",
+   "link1": "Data Sharing Coalition use case poster",
+   "link2": "Data Sharing Coalition article",
+   "link3": "",
+   "link1URL": "https://datasharingcoalition.eu/app/uploads/2023/03/230306-linksight-article-visual.pdf",
+   "link2URL": "https://datasharingcoalition.eu/use-cases/advancing-data-collaboration-for-monitoring-the-dutch-elderly-care-through-mpc-technology/",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Duality Technologies",
@@ -109,7 +132,8 @@
    "link3": "",
    "link1URL": "https://www.pnas.org/content/117/21/11608",
    "link2URL": "https://www.prnewswire.com/il/news-releases/duality-technologies-researchers-accelerate-privacy-enhanced-collaboration-on-genomic-data--with-significant-implications-for-covid-19-research-301059258.html",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Duality Technologies",
@@ -125,7 +149,8 @@
    "link3": "",
    "link1URL": "https://www.gcffc.org/wp-content/uploads/2020/06/FFIS-Innovation-and-discussion-paper-Case-studies-of-the-use-of-privacy-preserving-analysis.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Enveil",
@@ -141,7 +166,8 @@
    "link3": "",
    "link1URL": "https://www.gcffc.org/wp-content/uploads/2020/06/FFIS-Innovation-and-discussion-paper-Case-studies-of-the-use-of-privacy-preserving-analysis.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Enveil & DeliverFund",
@@ -157,7 +183,8 @@
    "link3": "",
    "link1URL": "https://www.globenewswire.com/en/news-release/2021/06/15/2247363/0/en/Enveil-and-DeliverFund-Leverage-Privacy-Enhancing-Technologies-to-Combat-Human-Trafficking.html",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Estonian Association of Information Technology and Telecommunications (ITL)",
@@ -173,7 +200,42 @@
    "link3": "",
    "link1URL": "https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/privacy-enhancing-technologies-report.pdf",
    "link2URL": "https://academic.oup.com/comjnl/article/61/12/1749/5095655",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Estonian Center of Applied Research (CentAR)",
+   "country": "Estonia",
+   "sector": "Education",
+   "description": "The Estonian Center of Applied Research (CentAR) used multi-party computation to carry out a big data study on the association between students, working during their studies at university, and whether they graduated in time. The project was the largest example of a statistical study on real data, using encryption for data privacy, to date when it was completed in 2015. 10 million tax records were linked to 60,000 education records from a Ministry of Education database by using Sharemind encryption tools, operated by the data owners, which meant that the data was never unecrypted outside of where it was originally stored. CentAR led the study, which was instigated by the Estonian Association of Information and Technology and Telecommunications. The Sharemind MPC system was hosted by the Estonian Information System's Authority, the Information Technology Centre of the Ministry of Finance, and private organisation, Cybernetica. This study demonstrates the use of MPC for building policy insights with large datasets and high levels of precision, while protecting personal data.",
+   "stage-of-dev": "Pilot",
+   "pets1": "Multi-party Computation",
+   "pets2": "",
+   "pets3": "",
+   "link1": "Journal article",
+   "link2": "Cybernetica case study",
+   "link3": "",
+   "link1URL": "https://eprint.iacr.org/2015/1159.pdf",
+   "link2URL": "https://edps.europa.eu/sites/edp/files/publication/17-06-09_triin-siil_sharemind_en.pdf",
+   "link3URL": "",
+   "dateAdded": "June 2023"
+ },
+ {
+   "who": "Eurostat",
+   "country": "Luxembourg",
+   "sector": "National Statistics",
+   "description": "Eurostat, a Directorate-General of the European Commission, has explored the use of Mobile Network Operator (MNO) data for the creation of official statistics on human population movement and mobility. The project analysed data in a trusted execution environment provided by Cybernetica's Sharemind technology to ensure that no individual data was shared, and no individuals could be identified. The product was tested using synthetic data on a population size of up to 100 million, aimed at demonstrating the scalability of the project. In parallel, research was conducted to assess the legal dimensions of the data processing in the project. Eurostat found that the project suggested the rising potential for the use of PETs in creating official statistics.",
+   "stage-of-dev": "Proof of Concept",
+   "pets1": "Trusted Execution Environment",
+   "pets2": "Synthetic Data",
+   "pets3": "",
+   "link1": "UN PETs Case Study repository",
+   "link2": "European Commission",
+   "link3": "Cybernetica blog",
+   "link1URL": "https://unstats.un.org/wiki/display/UGTTOPPT/3.+Eurostat%3A+Processing+of+longitudinal+mobile+network+operator+data",
+   "link2URL": "https://cros-legacy.ec.europa.eu/content/eurostat-cybernetica-project_en",
+   "link3URL": "https://cyber.ee/resources/news/cybernetica-and-eurostat-have-developed-a-new-privacy-preserving-approach-for-computing-statistics-from-sensitive-data/",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Facebook",
@@ -189,7 +251,25 @@
    "link3": "",
    "link1URL": "https://research.fb.com/blog/2020/02/new-privacy-protected-facebook-data-for-independent-research-on-social-medias-impact-on-democracy/",
    "link2URL": "https://arxiv.org/pdf/2002.04049.pdf",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Frontier Development Lab / Intel",
+   "country": "USA",
+   "sector": "Health and Social Care",
+   "description": "In a study on the relationship between radiation exposure in space and cancer, researchers used federated learning methods to access tightly protected human data on astronauts. This collaborative public-private project was by the Frontier Development Lab (FDL), which uses Intel's Open Federated Learning (OpenFL) framework. Researchers were able to use data from institutions including NASA, Mayo Clinic and Nasa's Gene Lab to train and combine models in situ, without requiring the data to be transferred. The main benefit was cost reduction, as the resources required to access and use such data would, otherwise, be a barrier to the research. As an organisation with a mission to provide public and scientific value, this cost-saving impact is an important outcome for NASA and associated organisations.",
+   "stage-of-dev": "Pilot",
+   "pets1": "Federated Learning",
+   "pets2": "",
+   "pets3": "",
+   "link1": "MarketScreener article",
+   "link2": "YouTube video by Intel Software",
+   "link3": "",
+   "link1URL": "https://www.marketscreener.com/quote/stock/INTEL-CORPORATION-4829/news/Intel-FDL-Intel-AI-Mentors-Seek-to-Improve-Astronaut-Health-36716002/",
+   "link2URL": "https://www.youtube.com/watch?v=ZRdg5fH93EI",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Google",
@@ -205,7 +285,8 @@
    "link3": "",
    "link1URL": "https://www.blog.google/technology/health/covid-19-community-mobility-reports",
    "link2URL": "https://arxiv.org/pdf/2004.04145.pdf",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Google",
@@ -221,7 +302,8 @@
    "link3": "",
    "link1URL": "https://ai.googleblog.com/2017/04/federated-learning-collaborative.html",
    "link2URL": "https://arxiv.org/pdf/1811.03604.pdf",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Google",
@@ -237,7 +319,25 @@
    "link3": "",
    "link1URL": "https://eprint.iacr.org/2017/738.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Hazy",
+   "country": "UK",
+   "sector": "Finance",
+   "description": "In their Fostering Better Finance project, Accenture used synthetic data to build prototype applications aimed at early identification of vulnerable customers based on their transactions. The project used a synthetic data generator model, produced by Hazy, a privacy tech company specialising in commercial use of synthetic data. The goal of the project was to offer earlier intervention for risks faced by customers, hence, providing better support to the vulnerable individuals with their finances. Accenture reported that use of the synthetic data allowed them to launch the project 8 times faster than expected. This is due to reduced risk from not using sensitive customer data, which, in turn, creates reduced security and governance barriers for working together with the banking client on building the project. This allowed prototypes to be built, in advance, before being tested with real customer data, hence, curtailing the risk of compromising potentially sensitive information about individuals.",
+   "stage-of-dev": "Product",
+   "pets1": "Synthetic Data",
+   "pets2": "",
+   "pets3": "",
+   "link1": "Hazy case study",
+   "link2": "",
+   "link3": "",
+   "link1URL": "https://hazy.com/resources/accenture-unlocks-customer-project-with-synthetic-data",
+   "link2URL": "",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Indian Institute of Science",
@@ -253,7 +353,25 @@
    "link3": "",
    "link1URL": "https://timesofindia.indiatimes.com/india/as-drones-get-ready-to-deliver-iisc-finds-way-to-aid-privacy/articleshow/80738756.cms",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Indonesia Ministry of Tourism",
+   "country": "Indonesia",
+   "sector": "Tourism",
+   "description": "The Indonesian Ministry of Tourism has made use of statistics on mobile phone positioning data to better understand cross-border tourism activity in the country. The task required that information by multiple mobile network operators was analyzed together to understand when users cross between different regions, which are covered by different operators. Mobile positioning data is generally protected, due to the sensitivity of information about individuals' mobility. The data was encrypted and aggregated using Sharemind, a privacy technology from Cybernetica. The mobile positioning data came from a system delivered by Estonian data analytics company, Positium, for the Ministry of Tourism. The Sharemind platform uses a trusted execution environment and does not allow access to unencrypted data nor encryption keys at any stage. The aggregated statistics about the number of users, and the overlap in use between the two largest mobile networks is now used by the Ministry of Tourism as a basis for the creation of tourism statistics.",
+   "stage-of-dev": "Product",
+   "pets1": "Trusted Execution Environment",
+   "pets2": "",
+   "pets3": "",
+   "link1": "UN PETs Case Study repository",
+   "link2": "Cybernetica blog",
+   "link3": "",
+   "link1URL": "https://unstats.un.org/wiki/display/UGTTOPPT/4.+Indonesia+Ministry+of+Tourism%3A+Confidentially+sharing+datasets+between+two+mobile+network+operators+via+a+trusted+execution+environment",
+   "link2URL": "https://cyber.ee/resources/news/cybernetica-and-positium-help-to-analyse-sensitive-data-in-indonesia/",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Inpher Inc.",
@@ -269,7 +387,8 @@
    "link3": "",
    "link1URL": "https://www.gcffc.org/wp-content/uploads/2020/06/FFIS-Innovation-and-discussion-paper-Case-studies-of-the-use-of-privacy-preserving-analysis.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "IQVIA",
@@ -285,7 +404,8 @@
    "link3": "",
    "link1URL": "https://www.bio-itworld.com/news/2019/04/24/de-identifying-genomic-data-with-hashing-technology",
    "link2URL": "https://www.iqvia.com/solutions/innovative-models/genomics",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Keyless",
@@ -301,7 +421,8 @@
    "link3": "",
    "link1URL": "https://thefintechtimes.com/vodafone-and-aws-trail-keyless-software-as-a-service-biometrics-to-improve-payment-experience/",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Microsoft",
@@ -317,7 +438,8 @@
    "link3": "Technical report",
    "link1URL": "https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/privacy-enhancing-technologies-report.pdf",
    "link2URL": "https://github.com/Microsoft/CCF",
-   "link3URL": "https://github.com/microsoft/CCF/blob/main/CCF-TECHNICAL-REPORT.pdf"
+   "link3URL": "https://github.com/microsoft/CCF/blob/main/CCF-TECHNICAL-REPORT.pdf",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Microsoft",
@@ -333,7 +455,8 @@
    "link3": "",
    "link1URL": "https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-microsoft-viva-the-employee-experience-platform-in/ba-p/2111481",
    "link2URL": "https://techcommunity.microsoft.com/t5/microsoft-viva-blog/microsoft-viva-insights-helps-people-nurture-wellbeing-and-be/ba-p/2107010",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Microsoft",
@@ -349,7 +472,8 @@
    "link3": "",
    "link1URL": "https://in.news.yahoo.com/microsofts-password-monitor-feature-coming-071406870.html",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Netherlands Organisation for Applied Scientific Research (TNO)",
@@ -365,7 +489,8 @@
    "link3": "",
    "link1URL": "https://www.youtube.com/watch?v=hvBb80eXuZg&feature=youtu.be",
    "link2URL": "https://medium.com/applied-mpc/identifying-heart-failure-patients-at-high-risk-using-mpc-ab8900e75295",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "NHS Digital/Privitar",
@@ -381,7 +506,8 @@
    "link3": "",
    "link1URL": "https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/privacy-enhancing-technologies-report.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "NVIDIA and King's College London",
@@ -397,7 +523,25 @@
    "link3": "",
    "link1URL": "https://venturebeat.com/2019/10/13/nvidia-uses-federated-learning-to-create-medical-imaging-ai/",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "OpenMined / Twitter Partnership",
+   "country": "",
+   "sector": "Social Media Research",
+   "description": "Social media company Twitter and open source community OpenMined are working together to pilot methods of improving transparency in social media, by facilitating privacy-enabled access to algorithmic code for researchers. In this way, OpenMined is exploring and implementing the infrastructure for this access, which includes a variety of PETs. One significant example technology used is that of \"remote execution\" environments, or, federated learning and analytics. Using these PETs, researchers can run code designed to train machine learning algorithms and generate data analytics in a federated way across a network, hence, curtailing the risks which come with a central actor controlling this data throughout the machine learning/analytics process. Initial outcomes of this work have demonstrated that it is possible for researchers to run queries across vast social media algorithms without directly accessing the data themselves. There are now subsequent plans to scale these methods (using federated analytics and learning in addition to other PETs like differential privacy) across multiple online platforms.",
+   "stage-of-dev": "Proof of Concept",
+   "pets1": "Differential Privacy",
+   "pets2": "Federated Learning",
+   "pets3": "Federated Analytics",
+   "link1": "Twitter blog",
+   "link2": "UN PETs Case Study Repository",
+   "link3": "",
+   "link1URL": "https://blog.twitter.com/engineering/en_us/topics/insights/2022/investing-in-privacy-enhancing-tech-to-advance-transparency-in-ML#:~:text=Partnering%20with%20OpenMined&text=OpenMined%20has%20successfully%20launched%20PETs,potential%20for%20PETs%20at%20Twitter.",
+   "link2URL": "",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "OpenSAFELY",
@@ -413,7 +557,8 @@
    "link3": "",
    "link1URL": "https://opensafely.org/",
    "link2URL": "https://www.nature.com/articles/s41586-020-2521-4",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Owkin",
@@ -429,7 +574,8 @@
    "link3": "",
    "link1URL": "https://www.itnonline.com/content/integrating-deep-learning-ct-scan-model-helps-predict-severity-covid-19-patients",
    "link2URL": "https://www.nature.com/articles/s41467-020-20657-4",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "Privitar",
@@ -445,7 +591,8 @@
    "link3": "",
    "link1URL": "https://www.gcffc.org/wp-content/uploads/2020/06/FFIS-Innovation-and-discussion-paper-Case-studies-of-the-use-of-privacy-preserving-analysis.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "RegulAItion",
@@ -461,7 +608,8 @@
    "link3": "",
    "link1URL": "",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
  },
  {
    "who": "RegulAItion",
@@ -477,7 +625,42 @@
    "link3": "",
    "link1URL": "",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Replica Analytics",
+   "country": "Canada",
+   "sector": "Health and Social Care",
+   "description": "In the Canadian province of Alberta, a collaboration of organisations worked together to create synthetic health records data for use in research. Researchers trained a model using 100,000 healthcare records from patients in the province, which they, then, applied to generate synthetic data. Collaborators on this project include a non-profit funder (Health Cities), researchers from the University of Alberta, pharmaceutical company Merck Canada, synthetic data specialists Replica Analytics, and advisors from Alberta Innovates and the Office of the Information and Privacy Commissioner of Alberta. The synthetic data allows students and researchers to undertake projects which would normally be limited due to privacy concerns, related to the sharing of sensitive health data. Hence, this step supports the application of data science to (population) health sciences.",
+   "stage-of-dev": "Product",
+   "pets1": "Synthetic Data",
+   "pets2": "",
+   "pets3": "",
+   "link1": "University of Alberta blog",
+   "link2": "Replica Analytics blog",
+   "link3": "",
+   "link1URL": "https://www.ualberta.ca/folio/2021/09/even-better-than-the-real-thing-simulated-anonymized-data-could-be-key-to-health-care-innovations.html?mkt_tok=MTM4LUVaTS0wNDIAAAF_k1T5TVCx7QSeYAvJyirJYEzI1vaWZMcw-5cx68iejSIbogMogUc5HZRZFG23MwcdqtDWM5-cX7oT1oB7mi4_wlh38rr9FpJ2wynVB8VW5GiM",
+   "link2URL": "https://replica-analytics.com/blog/joins-albertas-data-project/",
+   "link3URL": "",
+   "dateAdded": "June 2023"
+ },
+ {
+   "who": "Secretarium/ Danie",
+   "country": "UK",
+   "sector": "Finance",
+   "description": "The DANIE consortium is made up of banks and data providers, who upload their banking data to a shared platform for analysis with a number of aims, including: 1) improving the quality of client data, 2) anti money laundering and 3) fraud detection. The DANIE platform was launched in 2020 and uses encryption and trusted execution environments such that no humans have access to the data that is being processed. DANIE uses a privacy enhancing system provided by Secretarium, and both Secretarium and DANIE are finance initiatives that emerged from Société Générale’s incubator programme in London. Additional benefits of involvement in this collaboration for participant organisations include ensuring EU reporting requirements are being met by preventing fines for reporting inaccurate data, reducing resources expended on data reviews and remediation, and improved environmental performance for data management and analysis due to the efficiencies created by the central processing system, offered by Secretarium.",
+   "stage-of-dev": "Product",
+   "pets1": "Multi-party Computation",
+   "pets2": "Trusted Execution Environment",
+   "pets3": "",
+   "link1": "Royal Society report 2023 (p. 87)",
+   "link2": "Societe Generale Article",
+   "link3": "DANIE webpage",
+   "link1URL": "https://royalsociety.org/topics-policy/projects/privacy-enhancing-technologies/",
+   "link2URL": "https://wholesale.banking.societegenerale.com/en/insights/news-press-room/news-details/news/going-further-data-sharing-thanks-pets/",
+   "link3URL": "https://danie.tech/",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Signal",
@@ -493,7 +676,59 @@
    "link3": "",
    "link1URL": "https://signal.org/blog/private-contact-discovery/",
    "link2URL": "https://github.com/signalapp/ContactDiscoveryService/",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "Statice",
+   "country": "Germany",
+   "sector": "Insurance",
+   "description": "In Germany, insurance services company Provinzial collaborated with data privacy services firm Statice, using their synthetic data to train machine learning models which optimised their predictive analytics (in particular a \"next best offer\" recommender engine). A key outcome of this was saving over three months that would have otherwise been spent evaluating data privacy risks, thus addressing both expense of company time and data privacy in the process of optimising their systems.\n",
+   "stage-of-dev": "Product",
+   "pets1": "Synthetic Data",
+   "pets2": "",
+   "pets3": "",
+   "link1": "Statice case study",
+   "link2": "",
+   "link3": "",
+   "link1URL": "https://www.statice.ai/case-study/provinzial-predictive-analytics-synthetic-insurance-data#get-case-study",
+   "link2URL": "",
+   "link3URL": "",
+   "dateAdded": "June 2023"
+ },
+ {
+   "who": "Statistics Canada",
+   "country": "Canada",
+   "sector": "National Statistics",
+   "description": "Statistics Canada, National Statistics Office of Canada, has piloted the use of synthetic data to supply hackathon participants with data containing high analytical value. The risk of using real Statistics Canada data was clear, as many relevant resources are census datasets and mortality registries which clearly relate to personally identifiable individuals. Statistics Canada held two hackathons executed in this way and observed that the analytical skills of the participants were improved, while reducing the risk of disclosure. This means that using synthetic data can have significant positive impact on training scenarios, whilst preserving the privacy of data subjects.",
+   "stage-of-dev": "Pilot",
+   "pets1": "Synthetic Data",
+   "pets2": "",
+   "pets3": "",
+   "link1": "UN PETs Case Study repository",
+   "link2": "",
+   "link3": "",
+   "link1URL": "https://unstats.un.org/wiki/display/UGTTOPPT/10.+Statistics+Canada%3A+Trialling+the+use+of+synthetic+data",
+   "link2URL": "",
+   "link3URL": "",
+   "dateAdded": "June 2023"
+ },
+ {
+   "who": "Statistics Korea",
+   "country": "South Korea",
+   "sector": "National Statistics",
+   "description": "Statistics Korea, the National Statistics Office of Korea, has begun trying to improve the linking of fragmented government data through a public cloud-based big data system named the \"Statistical Data Hub Platform\". The provenance of this data stretches across government departments and so it may have significant utility for range of stakeholders operating in different contexts. However, accordingly, certain data may be sensitive and/or reflect identifiable data subjects. Statistics Korea has piloted the use of multiple PETs for this purpose. For example, the pilot involved links small business data, which is encrypted by using homomorphic encryption.",
+   "stage-of-dev": "Pilot",
+   "pets1": "Homomorphic Encryption",
+   "pets2": "Multi-party Computation",
+   "pets3": "Differential Privacy",
+   "link1": "UN PETs Case Study repository",
+   "link2": "Kostat",
+   "link3": "",
+   "link1URL": "https://unstats.un.org/wiki/display/UGTTOPPT/11.+Statistics+Korea%3A+Developing+a+privacy-preserving+Statistical+Data+Hub+Platform",
+   "link2URL": "https://kostat.go.kr/menu.es?mid=b10302010300",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "Tsinghua University and Microsoft",
@@ -509,7 +744,25 @@
    "link3": "",
    "link1URL": "https://arxiv.org/pdf/2003.09288.pdf",
    "link2URL": "",
-   "link3URL": ""
+   "link3URL": "",
+   "dateAdded": "July 2021"
+ },
+ {
+   "who": "United Nations PET Lab",
+   "country": "",
+   "sector": "National Statistics",
+   "description": "A pilot programme by the newly launched UN PET Lab is exploring how to improve the understanding of international trade using privacy enhancing technologies. The programme was announced in January 2022 and pilots the use of several PETs to produce useful statistics without sharing or compromising the input data. The example applications include verification of import and export quantities between countries by comparing the statistics that 'paired' countries hold on to how much they have sold and bought of a given commodity from the other. This insight is created by the use of multi-party computation and differential privacy, via a peer-to-peer differential data network created by OpenMined. The initiative also involved creation of an enclave technology provided by Oblivious, which hosts analysis in a secure trusted execution environment, such that only query outputs are shared. The technology also ensures that the output cannot be modified after creation. National statistics offices from the UK, the Netherlands, Italy and Canada took part in the programme, which initially used data uploaded on the UN Comtrade portal. A broader objective of this UN PET Lab project is to build an understanding how international data sharing can be improved using privacy enhancing technologies, as the technologies used in this example can be applied for other forms of data.",
+   "stage-of-dev": "Proof of Concept",
+   "pets1": "Differential Privacy",
+   "pets2": "Multi-party Computation",
+   "pets3": "",
+   "link1": "UN PETs Case Study repository",
+   "link2": "Information Age article",
+   "link3": "",
+   "link1URL": "https://unstats.un.org/wiki/display/UGTTOPPT/16.+United+Nations+PET+Lab%3A+International+Trade",
+   "link2URL": "https://www.information-age.com/un-launches-privacy-lab-pilot-to-unlock-cross-border-data-sharing-benefits-19414/",
+   "link3URL": "",
+   "dateAdded": "June 2023"
  },
  {
    "who": "US Census Bureau",
@@ -525,214 +778,7 @@
    "link3": "Explainer by the National Conference of State Legislators",
    "link1URL": "https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/privacy-enhancing-technologies-report.pdf",
    "link2URL": "https://arxiv.org/pdf/1809.02201.pdf",
-   "link3URL": "https://www.ncsl.org/research/redistricting/differential-privacy-for-census-data-explained.aspx"
- },
- {
-   "who": "Hazy",
-   "country": "UK",
-   "sector": "Finance",
-   "description": "In their Fostering Better Finance project, Accenture used synthetic data to build prototype applications aimed at early identification of vulnerable customers based on their transactions. The project used a synthetic data generator model, produced by Hazy, a privacy tech company specialising in commercial use of synthetic data. The goal of the project was to offer earlier intervention for risks faced by customers, hence, providing better support to the vulnerable individuals with their finances. Accenture reported that use of the synthetic data allowed them to launch the project 8 times faster than expected. This is due to reduced risk from not using sensitive customer data, which, in turn, creates reduced security and governance barriers for working together with the banking client on building the project. This allowed prototypes to be built, in advance, before being tested with real customer data, hence, curtailing the risk of compromising potentially sensitive information about individuals.",
-   "stage-of-dev": "Product",
-   "pets1": "Synthetic Data",
-   "pets2": "",
-   "pets3": "",
-   "link1": "Hazy blog Hazy case study",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Replica Analytics",
-   "country": "Canada",
-   "sector": "Health and Social Care",
-   "description": "In the Canadian province of Alberta, a collaboration of organisations worked together to create synthetic health records data for use in research. Researchers trained a model using 100,000 healthcare records from patients in the province, which they, then, applied to generate synthetic data. Collaborators on this project include a non-profit funder (Health Cities), researchers from the University of Alberta, pharmaceutical company Merck Canada, synthetic data specialists Replica Analytics, and advisors from Alberta Innovates and the Office of the Information and Privacy Commissioner of Alberta. The synthetic data allows students and researchers to undertake projects which would normally be limited due to privacy concerns, related to the sharing of sensitive health data. Hence, this step supports the application of data science to (population) health sciences.",
-   "stage-of-dev": "Product",
-   "pets1": "Synthetic Data",
-   "pets2": "",
-   "pets3": "",
-   "link1": "University of Alberta blog Replica Analytics blog",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Secretarium/ Danie",
-   "country": "UK",
-   "sector": "Finance",
-   "description": "The DANIE consortium is made up of banks and data providers, who upload their banking data to a shared platform for analysis with a number of aims, including: 1) improving the quality of client data, 2) anti money laundering and 3) fraud detection. The DANIE platform was launched in 2020 and uses encryption and trusted execution environments such that no humans have access to the data that is being processed. DANIE uses a privacy enhancing system provided by Secretarium, and both Secretarium and DANIE are finance initiatives that emerged from Société Générale’s incubator programme in London. Additional benefits of involvement in this collaboration for participant organisations include ensuring EU reporting requirements are being met by preventing fines for reporting inaccurate data, reducing resources expended on data reviews and remediation, and improved environmental performance for data management and analysis due to the efficiencies created by the central processing system, offered by Secretarium.",
-   "stage-of-dev": "Product",
-   "pets1": "Multi-party Computation",
-   "pets2": "Trusted Execution Environment",
-   "pets3": "",
-   "link1": "Royal Society report 2023 (p. 87) Societe Generale article DANIE webpage",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Indonesia Ministry of Tourism",
-   "country": "Indonesia",
-   "sector": "Health and Social Care",
-   "description": "The Indonesian Ministry of Tourism has made use of statistics on mobile phone positioning data to better understand cross-border tourism activity in the country. The task required that information by multiple mobile network operators was analyzed together to understand when users cross between different regions, which are covered by different operators. Mobile positioning data is generally protected, due to the sensitivity of information about individuals' mobility. The data was encrypted and aggregated using Sharemind, a privacy technology from Cybernetica. The mobile positioning data came from a system delivered by Estonian data analytics company, Positium, for the Ministry of Tourism. The Sharemind platform uses a trusted execution environment and does not allow access to unencrypted data nor encryption keys at any stage. The aggregated statistics about the number of users, and the overlap in use between the two largest mobile networks is now used by the Ministry of Tourism as a basis for the creation of tourism statistics.",
-   "stage-of-dev": "Product",
-   "pets1": "Trusted Execution Environment",
-   "pets2": "",
-   "pets3": "",
-   "link1": "The UN PET guide (pg. 73) Cybernetica blog",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Frontier Development Lab/ Intel",
-   "country": "USA",
-   "sector": "Health and Social Care",
-   "description": "In a study on the relationship between radiation exposure in space and cancer, researchers used federated learning methods to access tightly protected human data on astronauts. This collaborative public-private project was by the Frontier Development Lab (FDL), which uses Intel's Open Federated Learning (OpenFL) framework. Researchers were able to use data from institutions including NASA, Mayo Clinic and Nasa's Gene Lab to train and combine models in situ, without requiring the data to be transferred. The main benefit was cost reduction, as the resources required to access and use such data would, otherwise, be a barrier to the research. As an organisation with a mission to provide public and scientific value, this cost-saving impact is an important outcome for NASA and associated organisations.",
-   "stage-of-dev": "Pilot",
-   "pets1": "Federated Learning",
-   "pets2": "",
-   "pets3": "",
-   "link1": "MarketScreener article YouTube video by Intel Software",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Estonian Center of Applied Research (CentAR)",
-   "country": "Estonia",
-   "sector": "Education",
-   "description": "The Estonian Center of Applied Research (CentAR) used multi-party computation to carry out a big data study on the association between students, working during their studies at university, and whether they graduated in time. The project was the largest example of a statistical study on real data, using encryption for data privacy, to date when it was completed in 2015. 10 million tax records were linked to 60,000 education records from a Ministry of Education database by using Sharemind encryption tools, operated by the data owners, which meant that the data was never unecrypted outside of where it was originally stored. CentAR led the study, which was instigated by the Estonian Association of Information and Technology and Telecommunications. The Sharemind MPC system was hosted by the Estonian Information System's Authority, the Information Technology Centre of the Ministry of Finance, and private organisation, Cybernetica. This study demonstrates the use of MPC for building policy insights with large datasets and high levels of precision, while protecting personal data.",
-   "stage-of-dev": "Pilot",
-   "pets1": "Multi-party Computation",
-   "pets2": "",
-   "pets3": "",
-   "link1": "Journal article Cybernetica case study",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "United Nations PET Lab",
-   "country": "",
-   "sector": "Other",
-   "description": "A pilot programme by the newly launched UN PET Lab is exploring how to improve the understanding of international trade using privacy enhancing technologies. The programme was announced in January 2022 and pilots the use of several PETs to produce useful statistics without sharing or compromising the input data. The example applications include verification of import and export quantities between countries by comparing the statistics that 'paired' countries hold on to how much they have sold and bought of a given commodity from the other. This insight is created by the use of multi-party computation and differential privacy, via a peer-to-peer differential data network created by OpenMined. The initiative also involved creation of an enclave technology provided by Oblivious, which hosts analysis in a secure trusted execution environment, such that only query outputs are shared. The technology also ensures that the output cannot be modified after creation. National statistics offices from the UK, the Netherlands, Italy and Canada took part in the programme, which initially used data uploaded on the UN Comtrade portal. A broader objective of this UN PET Lab project is to build an understanding how international data sharing can be improved using privacy enhancing technologies, as the technologies used in this example can be applied for other forms of data.",
-   "stage-of-dev": "Proof of Concept",
-   "pets1": "Differential Privacy",
-   "pets2": "Multi-party Computation",
-   "pets3": "",
-   "link1": "The UN PET guide (pg. 100) Information Age article",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Statistics Canada",
-   "country": "Canada",
-   "sector": "Local Government",
-   "description": "Statistics Canada, National Statistics Office of Canada, has piloted the use of synthetic data to supply hackathon participants with data containing high analytical value. The risk of using real Statistics Canada data was clear, as many relevant resources are census datasets and mortality registries which clearly relate to personally identifiable individuals. Statistics Canada held two hackathons executed in this way and observed that the analytical skills of the participants were improved, while reducing the risk of disclosure. This means that using synthetic data can have significant positive impact on training scenarios, whilst preserving the privacy of data subjects.",
-   "stage-of-dev": "Pilot",
-   "pets1": "Synthetic Data",
-   "pets2": "",
-   "pets3": "",
-   "link1": "The UN PET Guide (p. 86)",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Statistics Korea",
-   "country": "South Korea",
-   "sector": "Local Government",
-   "description": "Statistics Korea, the National Statistics Office of Korea, has begun trying to improve the linking of fragmented government data through a public cloud-based big data system named the \"Statistical Data Hub Platform\". The provenance of this data stretches across government departments and so it may have significant utility for range of stakeholders operating in different contexts. However, accordingly, certain data may be sensitive and/or reflect identifiable data subjects. Statistics Korea has piloted the use of multiple PETs for this purpose. For example, the pilot involved links small business data, which is encrypted by using homomorphic encryption.",
-   "stage-of-dev": "Pilot",
-   "pets1": "Homomorphic Encryption",
-   "pets2": "Multi-party Computation",
-   "pets3": "Differential Privacy",
-   "link1": "The UN PET guide (pg. 88) Kostat",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Eurostat",
-   "country": "Luxembourg",
-   "sector": "Other",
-   "description": "Eurostat, a Directorate-General of the European Commission, has explored the use of Mobile Network Operator (MNO) data for the creation of official statistics on human population movement and mobility. The project analysed data in a trusted execution environment provided by Cybernetica's Sharemind technology to ensure that no individual data was shared, and no individuals could be identified. The product was tested using synthetic data on a population size of up to 100 million, aimed at demonstrating the scalability of the project. In parallel, research was conducted to assess the legal dimensions of the data processing in the project. Eurostat found that the project suggested the rising potential for the use of PETs in creating official statistics.",
-   "stage-of-dev": "Proof of Concept",
-   "pets1": "Trusted Execution Environment",
-   "pets2": "Synthetic Data",
-   "pets3": "",
-   "link1": "The UN PET guide (pg. 71) European Commission Cybernetica blog",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Statice",
-   "country": "Germany",
-   "sector": "Health and Social Care",
-   "description": "In the Netherlands, a public-private coalition of organisations came together to build better insights into provisions and needs in the elderly care system. In order to make use of sensitive health and care data, privacy tech company, Linksight, worked together with health insurer DSW and the local \"Zorgkantoor\" (municipal health and social care office), and created a data analysis platform using Multi-Party Computation. The Dutch elderly care system is facing rising care needs and monitoring this demand has been limited by barriers including privacy risks, cost to access data, and fragmentation of data, which is held by different parties. Using the platform (since only the aggregated data is viewed by the parties involved) the risks and costs for sharing and access are lower, and the resultant insights can be used by policy-makers to respond to the need better. The platform is currently used in the Delft, Schieland and Westland region of the Netherlands, but the Data Sharing Coalition highlights an ambition to scale this up to the national level.",
-   "stage-of-dev": "Product",
-   "pets1": "Synthetic Data",
-   "pets2": "",
-   "pets3": "",
-   "link1": "Data Sharing Coalition use case poster Data Sharing Coalition article",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "Data Sharing Coalition",
-   "country": "",
-   "sector": "Health and Social Care",
-   "description": "In the Netherlands, a public-private coalition of organisations came together to build better insights into provisions and needs in the elderly care system. In order to make use of sensitive health and care data, privacy tech company, Linksight, worked together with health insurer DSW and the local \"Zorgkantoor\" (municipal health and social care office), and created a data analysis platform using Multi-Party Computation. The Dutch elderly care system is facing rising care needs and monitoring this demand has been limited by barriers including privacy risks, cost to access data, and fragmentation of data, which is held by different parties. Using the platform (since only the aggregated data is viewed by the parties involved) the risks and costs for sharing and access are lower, and the resultant insights can be used by policy-makers to respond to the need better. The platform is currently used in the Delft, Schieland and Westland region of the Netherlands, but the Data Sharing Coalition highlights an ambition to scale this up to the national level.",
-   "stage-of-dev": "Product",
-   "pets1": "Multi-party Computation",
-   "pets2": "",
-   "pets3": "",
-   "link1": "Data Sharing Coalition use case poster Data Sharing Coalition article",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
- },
- {
-   "who": "OpenMined / Twitter Partnership",
-   "country": "",
-   "sector": "Digital",
-   "description": "Social media company Twitter and open source community OpenMined are working together to pilot methods of improving transparency in social media, by facilitating privacy-enabled access to algorithmic code for researchers. In this way, OpenMined is exploring and implementing the infrastructure for this access, which includes a variety of PETs. One significant example technology used is that of \"remote execution\" environments, or, federated learning and analytics. Using these PETs, researchers can run code designed to train machine learning algorithms and generate data analytics in a federated way across a network, hence, curtailing the risks which come with a central actor controlling this data throughout the machine learning/analytics process. Initial outcomes of this work have demonstrated that it is possible for researchers to run queries across vast social media algorithms without directly accessing the data themselves. There are now subsequent plans to scale these methods (using federated analytics and learning in addition to other PETs like differential privacy) across multiple online platforms.",
-   "stage-of-dev": "Proof of Concept",
-   "pets1": "Differential Privacy",
-   "pets2": "Federated Learning",
-   "pets3": "Federated Analytics",
-   "link1": "Twitter blog & The UN PET Guide (pg. 95)",
-   "link2": "",
-   "link3": "",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": ""
+   "link3URL": "https://www.ncsl.org/research/redistricting/differential-privacy-for-census-data-explained.aspx",
+   "dateAdded": "July 2021"
  }
 ]
