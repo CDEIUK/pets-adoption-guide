@@ -13,6 +13,13 @@ export default function RepositoryTable() {
         minWidth: 200,
       },
       {
+        Header: "Date added to repository",
+        accessor: "dateAdded",
+        Filter: SelectColumnFilter,
+        filter: "includes",
+        minWidth: 200,
+      },
+      {
         Header: "Sector",
         accessor: "sector",
         Filter: SelectColumnFilter,
