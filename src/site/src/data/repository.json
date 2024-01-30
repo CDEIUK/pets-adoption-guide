@@ -1,22 +1,5 @@
 [
  {
-   "who": "Aaa",
-   "country": "UK",
-   "sector": "Crime & Justice",
-   "description": "Test",
-   "stage-of-dev": "Proof of concept",
-   "pets1": "De-identification techniques",
-   "pets2": "",
-   "pets3": "",
-   "link1": "X",
-   "link2": "Y",
-   "link3": "Z",
-   "link1URL": "",
-   "link2URL": "",
-   "link3URL": "",
-   "dateAdded": "Jan 2024"
- },
- {
    "who": "Alan Turing Institute",
    "country": "UK",
    "sector": "Health and Social Care",
